@@ -1,0 +1,14 @@
+.simplebar-track {
+  height: 12px !important;
+  background-color: var(--chakra-colors-gray-100) !important;
+  opacity: 1 !important;
+}
+.simplebar-track .simplebar-scrollbar {
+  height: 12px !important;
+  top: 0 !important;
+}
+.simplebar-scrollbar::before,
+.simplebar-scrollbar.simplebar-visible:before {
+  background-color: var(--chakra-colors-gray-300) !important;
+  opacity: 1 !important;
+}
