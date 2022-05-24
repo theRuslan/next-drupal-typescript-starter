@@ -39,7 +39,7 @@
     "react-dom": "^18.1.0",
     "safe-json-stringify": "^1.2.0",
     "sharp": "^0.30.5",
-    "simplebar-react": "^2.3.7",
+    "simplebar-react": "^2.4.1",
     "webpack": "^5.72.1"
   },
   "devDependencies": {
