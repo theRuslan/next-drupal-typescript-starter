@@ -1265,10 +1265,10 @@
   dependencies:
     "@chakra-ui/utils" "^2.0.0"
 
-"@chakra-ui/react@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-2.1.1.tgz#9775c182442d34629537e407ea4f27a285e62421"
-  integrity sha512-qiBN/QbISFrMJQv+FMWbzUqO9NH7AvqCCWmjbh90EHwJT8IDB6Apl/YZvv+et13+8cI3ScNpGLXEaMWhAu1ovg==
+"@chakra-ui/react@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-2.1.2.tgz#e47039378de3368e2e49551855b7306d581df3fb"
+  integrity sha512-4Lly69/sUBp1j35zyzC/N6YttA/lspg4eGuE3PemeCY6SdlDyc0ne1i+WZJ+iipG9eSYDOSQgpnDZ9hnnz4i9w==
   dependencies:
     "@chakra-ui/accordion" "2.0.2"
     "@chakra-ui/alert" "2.0.1"
@@ -1312,7 +1312,7 @@
     "@chakra-ui/tag" "2.0.1"
     "@chakra-ui/textarea" "2.0.2"
     "@chakra-ui/theme" "2.0.3"
-    "@chakra-ui/toast" "2.0.4"
+    "@chakra-ui/toast" "2.0.5"
     "@chakra-ui/tooltip" "2.0.1"
     "@chakra-ui/transition" "2.0.1"
     "@chakra-ui/utils" "2.0.1"
@@ -1377,7 +1377,6 @@
   dependencies:
     "@chakra-ui/checkbox" "2.0.2"
     "@chakra-ui/utils" "2.0.1"
-
 
 "@chakra-ui/system@2.1.1", "@chakra-ui/system@^2.1.1":
   version "2.1.1"
@@ -1449,10 +1448,10 @@
     "@chakra-ui/theme-tools" "2.0.1"
     "@chakra-ui/utils" "2.0.1"
 
-"@chakra-ui/toast@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/toast/-/toast-2.0.4.tgz#20b14cbed7d05eaee8a7f719cf67dcd95a3cff3f"
-  integrity sha512-QBhUIA2g0sgV9ub0aGxs98JXv2ydatep30RSanwo1JDXPB8TgqUfKmtqYwvoeUXUlpG7bLMlrlNXnw4f0pBczg==
+"@chakra-ui/toast@2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/toast/-/toast-2.0.5.tgz#b83c0c5dce8ac1520dba0cdb7edd41530dbc9e77"
+  integrity sha512-J0iKPvq8kp3mUWXu4dkhGUlsZsMvHIWI7r/jpumMpNe39ngxOYNpRykzrHKW4/l96Uc0OhLzZhB5iIp6rq/bDg==
   dependencies:
     "@chakra-ui/alert" "2.0.1"
     "@chakra-ui/close-button" "2.0.1"
@@ -5995,10 +5994,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^4.6.4:
-  version "4.6.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.4.tgz#caa78bbc3a59e6a5c510d35703f6a09877ce45e9"
-  integrity sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==
+typescript@^4.7.2:
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.2.tgz#1f9aa2ceb9af87cca227813b4310fff0b51593c4"
+  integrity sha512-Mamb1iX2FDUpcTRzltPxgWMKy3fhg0TN378ylbktPGPK/99KbDtMQ4W1hwgsbPAsG3a0xKa1vmw4VKZQbkvz5A==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"

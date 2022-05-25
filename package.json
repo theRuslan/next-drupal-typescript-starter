@@ -19,7 +19,7 @@
   "dependencies": {
     "@babel/core": "^7.18.0",
     "@chakra-ui/icons": "^2.0.1",
-    "@chakra-ui/react": "^2.1.1",
+    "@chakra-ui/react": "^2.1.2",
     "@chakra-ui/system": "^2.1.1",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -55,6 +55,6 @@
     "eslint": "^8.16.0",
     "eslint-config-next": "^12.1.6",
     "eslint-config-prettier": "^8.5.0",
-    "typescript": "^4.6.4"
+    "typescript": "^4.7.2"
   }
 }
