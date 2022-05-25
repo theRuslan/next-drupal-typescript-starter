@@ -17,7 +17,7 @@
     "ci": "yarn install --frozen-lockfile"
   },
   "dependencies": {
-    "@babel/core": "^7.18.0",
+    "@babel/core": "^7.18.2",
     "@chakra-ui/icons": "^2.0.1",
     "@chakra-ui/react": "^2.1.2",
     "@chakra-ui/system": "^2.1.1",
@@ -33,7 +33,7 @@
     "next-i18next": "^11.0.0",
     "next-pwa": "^5.5.2",
     "next-seo": "^5.4.0",
-    "next-sitemap": "^2.5.24",
+    "next-sitemap": "^2.5.25",
     "nprogress": "^0.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
