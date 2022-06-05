@@ -5,9 +5,20 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ versions ]
+    branches: [ main, versions ]
   pull_request:
-    branches: [ versions ]
+    branches: [ main, versions ]
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      reason:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: "reason to run"
+        # Default value if no value is explicitly provided
+        default: "manual test rebuild"
+        # Input has to be provided for the workflow to run
+        required: true
+
 
 jobs:
   build:
