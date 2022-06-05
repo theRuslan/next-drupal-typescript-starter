@@ -1,3 +1,9 @@
+[![ESLint](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/eslint.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/eslint.yml)
+[![Dependency Review](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/dependency-review.yml)
+[![CodeQL](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/codeql-analysis.yml)
+[![Node.js CI](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/node.js.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/node.js.yml)
+[![Deploy to Production](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/deploy-production.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/deploy-production.yml)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
