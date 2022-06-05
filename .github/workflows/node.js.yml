@@ -48,9 +48,7 @@ jobs:
         DRUPAL_SITE_ID: ${{ secrets.DRUPAL_SITE_ID }}
         NEXT_IMAGE_DOMAIN: ${{ secrets.NEXT_IMAGE_DOMAIN }}
         NEXT_PUBLIC_DRUPAL_BASE_URL: ${{ secrets.NEXT_PUBLIC_DRUPAL_BASE_URL }}
-        NEXT_PUBLIC_GA_ID: ${{ secrets.NEXT_PUBLIC_GA_ID }}
-        NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.NEXT_PUBLIC_GA_MEASUREMENT_ID }}
-        NEXT_PUBLIC_YM_ID: ${{ secrets.NEXT_PUBLIC_YM_ID }}
+
     # - run: npm ci
     # - run: npm run build --if-present
     # - run: npm test
