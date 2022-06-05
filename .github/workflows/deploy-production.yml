@@ -3,10 +3,8 @@ concurrency: production_environment
 
 on:
   push:
-    # branches:
-      # - main
-    tags:
-      - v0.*
+    # branches: [ main ]
+    tags: [ v0.*, v1.* ]
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
