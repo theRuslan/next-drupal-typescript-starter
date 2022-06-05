@@ -9,8 +9,6 @@ declare global {
       DRUPAL_PREVIEW_SECRET: string;
       DRUPAL_CLIENT_ID: string;
       DRUPAL_CLIENT_SECRET: string;
-      NEXT_PUBLIC_GA_ID: string;
-      NEXT_PUBLIC_YM_ID: number;
     }
   }
 }

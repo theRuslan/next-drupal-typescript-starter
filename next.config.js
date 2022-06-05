@@ -13,6 +13,7 @@ const withPWA = require("next-pwa");
 const nextConfig = {
   publicRuntimeConfig: {
     canonicalDomain: "https://starter.wakelabstudio.ru/",
+    gtmId: "G-NCL3PK76HW",
   },
 
   reactStrictMode: true,
