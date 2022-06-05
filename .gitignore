@@ -38,7 +38,7 @@ yarn-error.log*
 *.tsbuildinfo
 
 # generated files
-**/public/workbox-*.js
+**/public/workbox*.js
 **/public/sw.js
-**/public/fallback-*.js
-**/public/sitemap-*.xml
+**/public/fallback*.js
+**/public/sitemap*.xml
