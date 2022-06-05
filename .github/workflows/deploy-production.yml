@@ -2,8 +2,8 @@ name: Deploy to Production
 
 on:
   push:
-    branches:
-      - main
+    # branches:
+      # - main
     tags:
       - v0.*
   workflow_dispatch:
