@@ -21,7 +21,7 @@ updates:
       time: "06:00"
     open-pull-requests-limit: 15
     target-branch: "versions"
-    versioning-strategy: widen
+    versioning-strategy: increase
     commit-message:
       prefix: "npm"
       prefix-development: "npm dev"
