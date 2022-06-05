@@ -1,9 +1,11 @@
 name: Deploy to Production
 
 on:
-  # push:
-    # branches:
-      # - main
+  push:
+    branches:
+      - main
+    tags:
+      - v0.*
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
