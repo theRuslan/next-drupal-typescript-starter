@@ -2,11 +2,17 @@
   "name": "next-drupal-typescript-starter",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "^16"
+  },
+  "config": {
+    "port": "3000"
+  },
   "scripts": {
-    "dev": "next dev -p 3000",
+    "dev": "next dev -p $npm_package_config_port",
     "build": "next build",
     "postbuild": "next-sitemap",
-    "start": "next start -p 3000",
+    "start": "next start -p $npm_package_config_port",
     "lint": "next lint",
     "preview": "next build && next start",
     "analyze": "ANALYZE=true next build",
