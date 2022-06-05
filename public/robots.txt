@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://starter.wakelabstudio.ru
+
+# Sitemaps
+Sitemap: https://starter.wakelabstudio.ru/sitemap.xml
