@@ -43,7 +43,7 @@ jobs:
       # Setup key
       - run: set -eu
       - run: mkdir "$HOME/.ssh"
-      - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
+      - run: echo "${{ secrets.DEPLOY_KEY }}" > "$HOME/.ssh/key"
       - run: chmod 600 "$HOME/.ssh/key"
 
       # Build
@@ -65,8 +65,8 @@ jobs:
       # - run: cp ./public/robots-production.txt ./public/robots.txt
 
       # Deploy to custom server
-      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete --exclude '.next/standalone/.next/BUILD_ID' --exclude '.next/BUILD_ID' ./.next/standalone/ ${{ secrets.deploy_host }}:/var/www/starter-frontend/
-      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress ./.next/static/ ${{ secrets.deploy_host }}:/var/www/starter-frontend/.next/static/
-      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress ./public/ ${{ secrets.deploy_host }}:/var/www/starter-frontend/public/
-      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress ./pm2.config.js ${{ secrets.deploy_host }}:/var/www/starter-frontend/
-      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress ./.next/BUILD_ID ${{ secrets.deploy_host }}:/var/www/starter-frontend/.next/BUILD_ID
+      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete --exclude '.next/standalone/.next/BUILD_ID' --exclude '.next/BUILD_ID' ./.next/standalone/ ${{ secrets.DEPLOY_HOST }}:/var/www/starter-frontend/
+      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress ./.next/static/ ${{ secrets.DEPLOY_HOST }}:/var/www/starter-frontend/.next/static/
+      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress ./public/ ${{ secrets.DEPLOY_HOST }}:/var/www/starter-frontend/public/
+      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress ./pm2.config.js ${{ secrets.DEPLOY_HOST }}:/var/www/starter-frontend/
+      - run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress ./.next/BUILD_ID ${{ secrets.DEPLOY_HOST }}:/var/www/starter-frontend/.next/BUILD_ID
