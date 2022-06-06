@@ -8,6 +8,7 @@
 # and https://eslint.org
 
 name: ESLint
+concurrency: ci_eslint
 
 on:
   push:

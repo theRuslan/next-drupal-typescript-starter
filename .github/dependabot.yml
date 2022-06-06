@@ -26,6 +26,3 @@ updates:
       prefix: "npm"
       prefix-development: "npm dev"
       include: "scope"
-    labels:
-      - "npm"
-      - "dependencies"

@@ -10,6 +10,7 @@
 # supported CodeQL languages.
 #
 name: "CodeQL"
+concurrency: ci_codeql
 
 on:
   push:
