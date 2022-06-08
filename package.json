@@ -26,7 +26,7 @@
     "@babel/core": "^7.18.2",
     "@chakra-ui/icons": "^2.0.2",
     "@chakra-ui/react": "^2.2.0",
-    "@chakra-ui/system": "^2.1.2",
+    "@chakra-ui/system": "^2.1.3",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@fontsource/manrope": "^4.5.9",
