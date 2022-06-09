@@ -4,10 +4,26 @@ import Heading from "@theme/components/Heading";
 import Link from "@theme/components/Link";
 
 const theme = extendTheme({
-  colors: {},
+  colors: {
+    primary: "#34ffc2",
+    secondary: "#f0ff1f",
+    selection: "#794aff",
+  },
 
   styles: {
-    global: {},
+    global: {
+      "::selection": {
+        backgroundColor: "selection",
+        color: "white",
+      },
+      body: {
+        backgroundColor: "white",
+        color: "black",
+      },
+      "b, strong": {
+        fontWeight: "extrabold",
+      },
+    },
   },
 
   breakpoints: {
@@ -34,7 +50,7 @@ const theme = extendTheme({
       lg: "960px",
       xl: "1140px",
       "2xl": "1320px",
-      // "3xl": "1820px",
+      "3xl": "1820px",
     },
   },
 
@@ -44,13 +60,13 @@ const theme = extendTheme({
     manrope: "Manrope, Arial, sans-serif",
 
     weight: {
-      extraLight: 200,
+      extralight: 200,
       light: 300,
       normal: 400,
       medium: 500,
-      semiBold: 600,
+      semibold: 600,
       bold: 700,
-      extraBold: 800,
+      extrabold: 800,
     },
   },
 
