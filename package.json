@@ -20,7 +20,9 @@
     "postinstall": "yarn gen:theme-typings",
     "cleanup": "rm -rf ./.next/",
     "preci": "rm -fr node_modules",
-    "ci": "yarn install --frozen-lockfile"
+    "ci": "yarn install --frozen-lockfile",
+    "gen:favicon": "real-favicon generate faviconDescription.json faviconData.json ./public",
+    "gen:favicon-update": "real-favicon check-for-update --fail-on-update faviconData.json"
   },
   "dependencies": {
     "@babel/core": "^7.18.2",
@@ -61,6 +63,7 @@
     "@types/safe-json-stringify": "^1.1.2",
     "@typescript-eslint/eslint-plugin": "^5.27.1",
     "@typescript-eslint/parser": "^5.27.1",
+    "cli-real-favicon": "^0.0.8",
     "eslint": "^8.17.0",
     "eslint-config-next": "^12.1.6",
     "eslint-config-prettier": "^8.5.0",
