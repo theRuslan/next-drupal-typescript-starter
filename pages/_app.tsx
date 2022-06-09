@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import { appWithTranslation } from "next-i18next";
 import getConfig from "next/config";
 import React from "react";
+import GithubCorner from "react-github-corner";
 import TagManager from "react-gtm-module";
 
 import type { AppProps } from "next/app";
@@ -25,6 +26,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Component {...pageProps} />
+      <GithubCorner href="https://github.com/WakeLab/next-drupal-typescript-starter" />
     </>
   );
 };
