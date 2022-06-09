@@ -12,6 +12,7 @@ const withPWA = require("next-pwa");
 
 const nextConfig = {
   publicRuntimeConfig: {
+    siteName: "Next.js+Drupal Typescript Starter",
     canonicalDomain: "https://starter.wakelabstudio.ru/",
     gtmId: "GTM-P5FFMJ8",
   },
