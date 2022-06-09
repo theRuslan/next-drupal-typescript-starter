@@ -1,3 +1,13 @@
 {
-  "example": "Пример"
+  "backToFront": "Вернуться на главную страницу",
+  "menu": "Меню",
+  "menu_close": "Закрыть меню",
+  "close": "Закрыть",
+  "en": "Eng",
+  "ru": "Рус",
+  "welcome": "Приветствуем на сайте ",
+  "frontTitle": "Next.js+Drupal Typescript стартер",
+  "frontDesc": "Стартовый шаблон от WakeLab",
+  "copyright": "Все права защищены.",
+  "desDev": "Дизайн и разработка:"
 }

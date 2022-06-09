@@ -1,3 +1,13 @@
 {
-  "example": "Example"
+  "backToFront": "Back to frontpage",
+  "menu": "Menu",
+  "menu_close": "Close menu",
+  "close": "Close",
+  "en": "Eng",
+  "ru": "Рус",
+  "welcome": "Welcome to",
+  "frontTitle": "Next.js+Drupal Typescript Starter",
+  "frontDesc": "Starter template by WakeLab",
+  "copyright": "All rights reserved.",
+  "desDev": "Design and development by:"
 }
