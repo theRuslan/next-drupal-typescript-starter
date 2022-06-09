@@ -1,14 +1,25 @@
 import React from "react";
 
-import type { ContentTranslationsContextProps } from "types/content-translations-context";
+import type { Dispatch, SetStateAction } from "react";
+
+export type ContextTranslationProps = {
+  label: string;
+  langcode: string;
+  path: string;
+};
+
+export type ContentTranslationsContextProps = {
+  contentTranslationsContextState?: ContextTranslationProps[];
+  setContentTranslationsContextState: Dispatch<SetStateAction<undefined>>;
+};
+
+type CTCPProps = {
+  children: React.ReactNode;
+};
 
 const defaultValue: ContentTranslationsContextProps = {
   contentTranslationsContextState: [],
   setContentTranslationsContextState: () => {},
-};
-
-type CTCPProps = {
-  children?: React.ReactNode;
 };
 
 export const ContentTranslationsContext =
