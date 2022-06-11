@@ -4,8 +4,8 @@
 [![Node.js CI](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/node.js.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/node.js.yml)
 [![Deploy to Production](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/deploy-production.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/deploy-production.yml)
 
-![Pagespeed Insights](/reports/psresultdesktop.svg "Pagespeed Insights")
-![Pagespeed Insights](/reports/psresultmobile.svg "Pagespeed Insights")
+![Pagespeed Insights](reports/psresultdesktop.svg "Pagespeed Insights")
+![Pagespeed Insights](reports/psresultmobile.svg "Pagespeed Insights")
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
