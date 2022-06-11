@@ -6,13 +6,13 @@
 [![Node.js CI](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/node.js.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/node.js.yml)
 [![Deploy to Production](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/deploy-production.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/deploy-production.yml)
 
-## Pagespeed Insights Desktop
-
-![Pagespeed Insights Desktop](reports/psresultdesktop.svg "Pagespeed Insights Desktop")
-
 ## Pagespeed Insights Mobile
 
-![Pagespeed Insights Mobile](reports/psresultmobile.svg "Pagespeed Insights Mobile")
+[![Pagespeed Insights Mobile](reports/psresultmobile.svg "Pagespeed Insights Mobile")](https://pagespeed.web.dev/report?url=https://starter.wakelabstudio.ru&form_factor=mobile)
+
+## Pagespeed Insights Desktop
+
+[![Pagespeed Insights Desktop](reports/psresultdesktop.svg "Pagespeed Insights Desktop")](https://pagespeed.web.dev/report?url=https://starter.wakelabstudio.ru&form_factor=desktop)
 
 ## Getting Started
 
