@@ -9,7 +9,7 @@ on:
 jobs:
   getpsresults:
     env:
-      HOST: ${{ secrets.NEXT_PUBLIC_DRUPAL_BASE_URL }}
+      HOST: https://starter.wakelabstudio.ru/
       PSURL: https://pagespeed-insights.herokuapp.com
       PSRDESKTOP: psresultdesktop
       PSRMOBILE: psresultmobile
