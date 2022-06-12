@@ -35,8 +35,9 @@
       "themeColor": "#ffffff",
       "manifest": {
         "name": "Starter",
+        "start_url": "/",
         "display": "standalone",
-        "orientation": "notSet",
+        "orientation": "portrait",
         "onConflict": "override",
         "declared": true
       },
