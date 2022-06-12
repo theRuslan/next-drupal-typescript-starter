@@ -2,7 +2,6 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import { useRouter } from "next/router";
 
 import { Heading, Link as ChakraLink } from "@chakra-ui/layout";
