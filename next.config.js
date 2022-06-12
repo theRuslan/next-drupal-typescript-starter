@@ -3,12 +3,7 @@
 // const path = require("path");
 const withPlugins = require("next-compose-plugins");
 const { i18n } = require("./next-i18next.config");
-const withPWA = require("next-pwa");
-// const runtimeCaching = require("next-pwa/cache");
-
-// const withBundleAnalyzer = require("@next/bundle-analyzer")({
-//   enabled: process.env.ANALYZE === "true",
-// });
+const runtimeCaching = require("next-pwa/cache");
 
 const nextConfig = {
   publicRuntimeConfig: {
@@ -69,19 +64,18 @@ const nextConfig = {
   // },
 };
 
-module.exports = withPlugins([
-  // [withBundleAnalyzer({})],
-  [
-    withPWA,
-    {
-      pwa: {
-        dest: "public",
-        disable: process.env.NODE_ENV === "development",
-        register: true,
-        sw: "/sw.js",
-        // runtimeCaching,
-      },
-    },
-  ],
-  [nextConfig],
-]);
+const withPWA = require("next-pwa")({
+  pwa: {
+    dest: "public",
+    disable: process.env.NODE_ENV === "development",
+    register: true,
+    sw: "/sw.js",
+    runtimeCaching,
+  },
+});
+
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
+
+module.exports = withPlugins([[withBundleAnalyzer], [withPWA], [nextConfig]]);
