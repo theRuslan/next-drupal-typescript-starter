@@ -33,6 +33,7 @@
     "@emotion/styled": "^11.9.3",
     "@fontsource/manrope": "^4.5.9",
     "@n8tb1t/use-scroll-position": "^2.0.3",
+    "@next/env": "^12.1.6",
     "drupal-jsonapi-params": "^2.0.0",
     "framer-motion": "^6.3.11",
     "next": "^12.1.6",
