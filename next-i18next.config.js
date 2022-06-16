@@ -5,7 +5,7 @@ module.exports = {
     defaultLocale: "en",
     locales: ["en", "ru"],
     localeDetection: false,
-    debug: process.env.NODE_ENV !== "production",
+    debug: false,
   },
   localePath: path.resolve("locales"),
   /*
