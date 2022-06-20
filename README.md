@@ -1,18 +1,9 @@
 # Next.js+Drupal Typescript Starter
 
+[![Node.js CI](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/node.js.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/node.js.yml)
 [![ESLint](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/eslint.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/eslint.yml)
 [![Dependency Review](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/dependency-review.yml)
 [![CodeQL](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/codeql-analysis.yml)
-[![Node.js CI](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/node.js.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/node.js.yml)
-[![Deploy to Production](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/deploy-production.yml/badge.svg)](https://github.com/WakeLab/next-drupal-typescript-starter/actions/workflows/deploy-production.yml)
-
-## Pagespeed Insights Mobile
-
-[![Pagespeed Insights Mobile](reports/psresultmobile.svg "Pagespeed Insights Mobile")](https://pagespeed.web.dev/report?url=https://starter.wakelabstudio.ru&form_factor=mobile)
-
-## Pagespeed Insights Desktop
-
-[![Pagespeed Insights Desktop](reports/psresultdesktop.svg "Pagespeed Insights Desktop")](https://pagespeed.web.dev/report?url=https://starter.wakelabstudio.ru&form_factor=desktop)
 
 ## Getting Started
 
@@ -48,3 +39,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Pagespeed Insights Mobile
+
+[![Pagespeed Insights Mobile](reports/psresultmobile.svg "Pagespeed Insights Mobile")](https://pagespeed.web.dev/report?url=https://starter.wakelabstudio.ru&form_factor=mobile)
+
+## Pagespeed Insights Desktop
+
+[![Pagespeed Insights Desktop](reports/psresultdesktop.svg "Pagespeed Insights Desktop")](https://pagespeed.web.dev/report?url=https://starter.wakelabstudio.ru&form_factor=desktop)
