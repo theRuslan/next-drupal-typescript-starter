@@ -1498,10 +1498,10 @@
   dependencies:
     "@chakra-ui/utils" "2.0.2"
 
-"@corex/deepmerge@^4.0.14":
-  version "4.0.16"
-  resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-4.0.16.tgz#2fca1db87ebdfd3faa2798cdbde1b02e73b11f4a"
-  integrity sha512-NjPTizUx0ovYv7WiC8Erq/yMGjc4OfSMywbEUkb1QpaBb4tgD9fe2DwRy3hfogrMZ30nWxwOtMg7hwuY67RYnQ==
+"@corex/deepmerge@^4.0.16":
+  version "4.0.26"
+  resolved "https://registry.yarnpkg.com/@corex/deepmerge/-/deepmerge-4.0.26.tgz#5ebd60608e5050a336f3163e68ac58152963a3aa"
+  integrity sha512-Tp0u2/h45uWbZhsjazK9W6WwwTVBqCIY+1qJHfy6QWN0qUw6vCWLnJhB+Gg9dpQZ26q3ygd6aj49DtXUDq56JQ==
 
 "@cspotcode/source-map-consumer@0.8.0":
   version "0.8.0"
@@ -5007,12 +5007,12 @@ next-seo@^5.4.0:
   resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-5.4.0.tgz#37a7784b30b3f70cec3fa0d77f9dde5990822d24"
   integrity sha512-R9DhajPwJnR/lsF2hZ8cN8uqr5CVITsRrCG1AF5+ufcaybKYOvnH8sH9MaH4/hpkps3PQ9H71S7J7SPYixAYzQ==
 
-next-sitemap@^3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.0.5.tgz#6c031641455356db7fac9d34b42809dd4c43d1b2"
-  integrity sha512-YdiW5wYNruyZCvhGGOMAdTylCQuxQkZKbSFV9Fjuf/U7aAt8lJwc3HG/WvR0n3Q1Y8c1ZiW/24UDZLQPfoKsYg==
+next-sitemap@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/next-sitemap/-/next-sitemap-3.1.1.tgz#c6d5c076f9c17e6138dd253486ca00a572458dda"
+  integrity sha512-6xNv0qawHHgIWYyEe/JHq/fl5hhHAbhe3N0y5/s0QpxNzQ/fVwhP4i29O2x6cjve3ONyFTwcYdBbQCk5Wya2BQ==
   dependencies:
-    "@corex/deepmerge" "^4.0.14"
+    "@corex/deepmerge" "^4.0.16"
     minimist "^1.2.6"
 
 next@^12.0.0, next@^12.1.6:
