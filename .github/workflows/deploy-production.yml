@@ -1,10 +1,10 @@
-name: Deploy to Production
-concurrency: production_environment
+name: Deploy to custom server
+concurrency: deploy_custom_environment
 
 on:
-  push:
+  # push:
     # branches: [ main ]
-    tags: [ v0.*, v1.* ]
+    # tags: [ v0.*, v1.* ]
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
