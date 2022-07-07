@@ -32,7 +32,7 @@
     "@fontsource/manrope": "^4.5.9",
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "drupal-jsonapi-params": "^2.0.0",
-    "framer-motion": "^6.4.1",
+    "framer-motion": "^6.4.2",
     "next": "^12.2.0",
     "next-compose-plugins": "^2.2.1",
     "next-drupal": "^1.4.0",
