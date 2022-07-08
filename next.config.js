@@ -20,9 +20,7 @@ const nextConfig = {
 
   i18n,
 
-  experimental: {
-    outputStandalone: true,
-  },
+  // output: "standalone",
 
   // sassOptions: {
   //   includePaths: [path.join(__dirname, "styles")],
