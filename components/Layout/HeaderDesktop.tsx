@@ -1,9 +1,9 @@
+import { useViewportScroll } from "framer-motion";
 import dynamic from "next/dynamic";
 import React from "react";
 
 import { Flex, Grid } from "@chakra-ui/layout";
 import LogoBox from "@components/Logos/LogoBox";
-import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
 const Wrapper = dynamic(() => import("@components/Layout/Wrapper"));
 const Container = dynamic(() => import("@components/Layout/Container"));
@@ -14,18 +14,15 @@ const Nav = dynamic(() => import("@components/Layout/Nav"));
 // const SearchBox = dynamic(() => import("@components/Layout/SearchBox"));
 
 const HeaderDesktop = () => {
+  const { scrollY } = useViewportScroll();
   const [isScrolled, setIsScrolled] = React.useState(false);
 
-  useScrollPosition(
-    ({ currPos }) => {
-      const scrolled = currPos.y < -300;
+  React.useEffect(() => {
+    scrollY.onChange(() => {
+      const scrolled = scrollY.get() > 300;
       if (scrolled !== isScrolled) setIsScrolled(scrolled);
-    },
-    [isScrolled],
-    undefined,
-    false,
-    10
-  );
+    });
+  }, [isScrolled, scrollY]);
 
   const Bar = React.useCallback(
     () => (

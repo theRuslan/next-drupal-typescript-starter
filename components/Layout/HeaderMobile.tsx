@@ -1,3 +1,4 @@
+import { useViewportScroll } from "framer-motion";
 import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
@@ -6,8 +7,6 @@ import React from "react";
 import { IconButton } from "@chakra-ui/button";
 import { Flex } from "@chakra-ui/layout";
 import LogoBox from "@components/Logos/LogoBox";
-// import { useBreakpointValue } from "@chakra-ui/media-query";
-import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
 const Wrapper = dynamic(() => import("@components/Layout/Wrapper"));
 const Container = dynamic(() => import("@components/Layout/Container"));
@@ -24,6 +23,7 @@ const Nav = dynamic(() => import("@components/Layout/Nav"));
 const HeaderMobile = () => {
   const { t } = useTranslation("common");
   const { events } = useRouter();
+  const { scrollY } = useViewportScroll();
   const [extendedState, setExtendedState] = React.useState(false);
   const [isForwardScroll, setIsForwardScroll] = React.useState(false);
 
@@ -45,19 +45,12 @@ const HeaderMobile = () => {
     };
   }, [events]);
 
-  useScrollPosition(
-    ({ prevPos, currPos }) => {
-      const forwardScroll = currPos.y < prevPos.y;
+  React.useEffect(() => {
+    scrollY.onChange(() => {
+      const forwardScroll = scrollY.get() > scrollY.getPrevious();
       if (forwardScroll !== isForwardScroll) setIsForwardScroll(forwardScroll);
-    },
-    [isForwardScroll],
-    undefined,
-    false,
-    100
-  );
-
-  // const contactFontSize = useBreakpointValue({ base: "18", sm: "22" });
-  // const contactIiconSize = useBreakpointValue({ base: "6", sm: "9" });
+    });
+  }, [isForwardScroll, scrollY]);
 
   const Bar = React.useCallback(
     () => (
