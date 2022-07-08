@@ -14,7 +14,6 @@ import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import NProgress from "nprogress";
 import React from "react";
-import GithubCorner from "react-github-corner";
 import TagManager from "react-gtm-module";
 
 import { ChakraProvider } from "@chakra-ui/provider";
@@ -197,8 +196,6 @@ const App = ({ Component, pageProps }: AppProps) => {
 
         <BPIndicator />
       </ChakraProvider>
-
-      <GithubCorner href="https://github.com/WakeLab/next-drupal-typescript-starter" />
     </>
   );
 };
