@@ -1,8 +1,9 @@
 name: Get Pagespeed results
+
 on:
-  schedule:
+  # schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '0 0 * * *' # 00:00 UTC
+    # - cron:  '0 0 * * *' # 00:00 UTC
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
