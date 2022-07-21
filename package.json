@@ -30,7 +30,7 @@
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@fontsource/manrope": "^4.5.9",
-    "drupal-jsonapi-params": "^2.0.0",
+    "drupal-jsonapi-params": "^2.1.0",
     "framer-motion": "^6.5.1",
     "next": "^12.2.2",
     "next-compose-plugins": "^2.2.1",
