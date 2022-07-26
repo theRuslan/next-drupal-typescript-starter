@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.1.2",
-    "@next/bundle-analyzer": "^12.2.2",
+    "@next/bundle-analyzer": "^12.2.3",
     "@types/node": "^18.0.6",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^18.0.15",
