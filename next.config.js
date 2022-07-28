@@ -1,10 +1,11 @@
-/** @type {import('next').NextConfig} */
-
 // const path = require("path");
 const withPlugins = require("next-compose-plugins");
 const { i18n } = require("./next-i18next.config");
 const runtimeCaching = require("next-pwa/cache");
 
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
   publicRuntimeConfig: {
     siteName: "Next.js+Drupal Typescript Starter",
@@ -13,6 +14,8 @@ const nextConfig = {
   },
 
   reactStrictMode: true,
+
+  swcMinify: true,
 
   images: {
     domains: [process.env.NEXT_IMAGE_DOMAIN],
@@ -74,6 +77,7 @@ const withPWA = require("next-pwa")({
 
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
+  openAnalyzer: true,
 });
 
 module.exports = withPlugins([[withBundleAnalyzer], [withPWA], [nextConfig]]);

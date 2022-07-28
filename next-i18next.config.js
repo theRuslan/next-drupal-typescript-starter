@@ -1,6 +1,9 @@
 const path = require("path");
 
-module.exports = {
+/**
+ * @type {import('next-i18next').UserConfig}
+ */
+const nextI18nextConfig = {
   i18n: {
     defaultLocale: "en",
     locales: ["en", "ru"],
@@ -14,3 +17,5 @@ module.exports = {
    */
   reloadOnPrerender: process.env.NODE_ENV !== "production",
 };
+
+module.exports = nextI18nextConfig;
