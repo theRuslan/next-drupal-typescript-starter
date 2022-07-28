@@ -1,4 +1,4 @@
-import { useViewportScroll } from "framer-motion";
+import { useScroll } from "framer-motion";
 import { useTranslation } from "next-i18next";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
@@ -23,7 +23,7 @@ const Nav = dynamic(() => import("@components/Layout/Nav"));
 const HeaderMobile = () => {
   const { t } = useTranslation("common");
   const { events } = useRouter();
-  const { scrollY } = useViewportScroll();
+  const { scrollY } = useScroll();
   const [extendedState, setExtendedState] = React.useState(false);
   const [isForwardScroll, setIsForwardScroll] = React.useState(false);
 

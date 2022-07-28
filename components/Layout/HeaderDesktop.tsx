@@ -1,4 +1,4 @@
-import { useViewportScroll } from "framer-motion";
+import { useScroll } from "framer-motion";
 import dynamic from "next/dynamic";
 import React from "react";
 
@@ -14,7 +14,7 @@ const Nav = dynamic(() => import("@components/Layout/Nav"));
 // const SearchBox = dynamic(() => import("@components/Layout/SearchBox"));
 
 const HeaderDesktop = () => {
-  const { scrollY } = useViewportScroll();
+  const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = React.useState(false);
 
   React.useEffect(() => {
