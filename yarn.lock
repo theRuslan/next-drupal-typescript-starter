@@ -992,12 +992,12 @@
     "@chakra-ui/visually-hidden" "2.0.6"
     "@zag-js/focus-visible" "0.1.0"
 
-"@chakra-ui/cli@^2.1.2":
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/cli/-/cli-2.1.2.tgz#8a42f2ca5e21781025e1dacd117a5b3b7f7c0c55"
-  integrity sha512-vhrtKFESNk180SRfw5mT44T8KNBoayN6mylELI5J/3nED4zSyKxfd9+mWFPrTHZyOuG8PYX/UxDy5KJLi3+Lpw==
+"@chakra-ui/cli@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/cli/-/cli-2.1.4.tgz#2aa7de4aa6fb0c2a75d6ad4e37cd05fa3dc621d3"
+  integrity sha512-6gBlIVyXK9g4n/qV3jSBu+jsvzYVRK7IzgoSxH1cTXp96yLKqdPCMHCQZYm/5Zu14mNjbf7cH9Ec1PwzRyETNA==
   dependencies:
-    "@chakra-ui/utils" "^2.0.3"
+    "@chakra-ui/utils" "2.0.6"
     "@swc/core" "^1.2.177"
     chokidar "^3.5.3"
     cli-check-node "^1.3.4"
@@ -1510,7 +1510,7 @@
     framesync "5.3.0"
     lodash.mergewith "4.6.2"
 
-"@chakra-ui/utils@2.0.6", "@chakra-ui/utils@^2.0.3":
+"@chakra-ui/utils@2.0.6":
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/@chakra-ui/utils/-/utils-2.0.6.tgz#3a966647d5adc18852d6efb985bc01b3f6fbd955"
   integrity sha512-ZjrHZo9GXZeAU1uvn/ZLU37avUz/3wsoqulRDSL//Kc/RrcmP1Ru6pmQ746qN3An+O29RFTQ4lj8M0R2T+I2uA==
