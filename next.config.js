@@ -66,13 +66,11 @@ const nextConfig = {
 };
 
 const withPWA = require("next-pwa")({
-  pwa: {
-    dest: "public",
-    disable: process.env.NODE_ENV === "development",
-    register: true,
-    sw: "/sw.js",
-    runtimeCaching,
-  },
+  dest: "public",
+  disable: process.env.NODE_ENV === "development",
+  register: true,
+  sw: "/sw.js",
+  runtimeCaching,
 });
 
 const withBundleAnalyzer = require("@next/bundle-analyzer")({
@@ -80,4 +78,4 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
   openAnalyzer: true,
 });
 
-module.exports = withPlugins([[withBundleAnalyzer], [withPWA], [nextConfig]]);
+module.exports = withPlugins([[withPWA], [withBundleAnalyzer]], nextConfig);
