@@ -59,7 +59,7 @@
     "@typescript-eslint/parser": "^5.36.2",
     "cli-real-favicon": "^0.0.8",
     "eslint": "^8.23.1",
-    "eslint-config-next": "^12.2.5",
+    "eslint-config-next": "^12.3.0",
     "eslint-config-prettier": "^8.5.0",
     "typescript": "^4.8.3"
   }
