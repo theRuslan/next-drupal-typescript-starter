@@ -44,7 +44,7 @@
     "react-dom": "^18.2.0",
     "react-gtm-module": "^2.0.11",
     "safe-json-stringify": "^1.2.0",
-    "sharp": "^0.31.0"
+    "sharp": "^0.31.1"
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.1.8",
