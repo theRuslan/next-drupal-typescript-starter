@@ -29,7 +29,7 @@
     "@chakra-ui/react": "^2.3.4",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
-    "@fontsource/manrope": "^4.5.11",
+    "@fontsource/manrope": "^4.5.12",
     "drupal-jsonapi-params": "^2.1.0",
     "framer-motion": "^7.5.0",
     "next": "^12.3.1",
