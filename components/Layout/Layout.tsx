@@ -1,17 +1,14 @@
 import dynamic from "next/dynamic";
-import React from "react";
+import { ReactNode } from "react";
 
 import { Box, Flex } from "@chakra-ui/layout";
 
 const HeaderSwitcher = dynamic(
-  () => import("@components/Layout/HeaderSwitcher")
+  () => import("@/components/Layout/HeaderSwitcher")
 );
-const Footer = dynamic(() => import("@components/Layout/Footer"));
+const Footer = dynamic(() => import("@/components/Layout/Footer"));
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
-  // const theme = useTheme();
-  // console.log("theme :>> ", theme);
-
+const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Flex

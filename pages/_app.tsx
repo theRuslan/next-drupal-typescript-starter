@@ -5,45 +5,44 @@ import "@fontsource/manrope/500.css"; // Medium
 import "@fontsource/manrope/600.css"; // Semi bold
 import "@fontsource/manrope/700.css"; // Bold
 import "@fontsource/manrope/800.css"; // Extra Bold
-import "@styles/nprogress.css";
+import "@/styles/nprogress.css";
 
-import { appWithTranslation } from "next-i18next";
+import { appWithTranslation, useTranslation } from "next-i18next";
 import { DefaultSeo, OrganizationJsonLd, SocialProfileJsonLd } from "next-seo";
-import getConfig from "next/config";
+import { AppProps } from "next/app";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import NProgress from "nprogress";
-import React from "react";
+import { useEffect } from "react";
 import TagManager from "react-gtm-module";
 
+import { ContentTranslationsContextProvider } from "@/hooks/ContentTranslationsContext";
+// import Fonts from "@/theme/fonts"; // custom self-hosted fonts loading
+import theme from "@/theme/theme";
 import { ChakraProvider } from "@chakra-ui/provider";
-import { ContentTranslationsContextProvider } from "@hooks/ContentTranslationsContext";
-// import Fonts from "@theme/fonts"; // custom self-hosted fonts loading
-import theme from "@theme/theme";
 
-import type { AppProps } from "next/app";
-
-const Layout = dynamic(() => import("@components/Layout/Layout"));
-const BPIndicator = dynamic(() => import("@components/Layout/BPIndicator"));
+const Layout = dynamic(() => import("@/components/Layout/Layout"));
+const BPIndicator = dynamic(() => import("@/components/Layout/BPIndicator"));
 
 const App = ({ Component, pageProps }: AppProps) => {
   const { events } = useRouter();
-  const { publicRuntimeConfig } = getConfig();
+  const { t } = useTranslation();
+  const siteName = t("siteName");
 
   // Initializing Google Tag Manager once on load with checking for production
   // environment.
-  React.useEffect(() => {
+  useEffect(() => {
     const tagManagerArgs = {
-      gtmId: publicRuntimeConfig.gtmId,
+      gtmId: process.env.NEXT_PUBLIC_GTM_ID,
     };
 
     if (process.env.NODE_ENV === "production") {
       TagManager.initialize(tagManagerArgs);
     }
-  }, [publicRuntimeConfig.gtmId]);
+  }, []);
 
   // show NProgress indicator according router.events
-  React.useEffect(() => {
+  useEffect(() => {
     events.on("routeChangeStart", () => NProgress.start());
     events.on("routeChangeComplete", () => NProgress.done());
     events.on("routeChangeError", () => NProgress.done());
@@ -58,21 +57,21 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <DefaultSeo
-        defaultTitle={publicRuntimeConfig.siteName}
-        titleTemplate={`%s | ${publicRuntimeConfig.siteName}`}
-        description={publicRuntimeConfig.siteName}
+        defaultTitle={siteName}
+        titleTemplate={`%s | ${siteName}`}
+        description={siteName}
         openGraph={{
           type: "website",
-          url: publicRuntimeConfig.canonicalDomain,
-          title: publicRuntimeConfig.siteName,
-          description: publicRuntimeConfig.siteName,
-          site_name: publicRuntimeConfig.siteName,
+          url: process.env.NEXT_PUBLIC_SITE_URL,
+          title: siteName,
+          description: siteName,
+          site_name: siteName,
           images: [
             {
-              url: `${publicRuntimeConfig.canonicalDomain}/og-image.jpg`,
+              url: `${process.env.NEXT_PUBLIC_SITE_URL}/og-image.jpg`,
               width: 1200,
               height: 630,
-              alt: publicRuntimeConfig.siteName,
+              alt: siteName,
               type: "image/jpeg",
             },
           ],
@@ -96,7 +95,7 @@ const App = ({ Component, pageProps }: AppProps) => {
             name: "theme-color",
             content: "#ffffff",
           },
-          { name: "application-name", content: publicRuntimeConfig.siteName },
+          { name: "application-name", content: siteName },
           {
             name: "apple-mobile-web-app-capable",
             content: "yes",
@@ -107,7 +106,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           },
           {
             name: "apple-mobile-web-app-title",
-            content: publicRuntimeConfig.siteName,
+            content: siteName,
           },
           {
             name: "format-detection",
@@ -170,14 +169,14 @@ const App = ({ Component, pageProps }: AppProps) => {
 
       <OrganizationJsonLd
         type="Organization"
-        name={publicRuntimeConfig.siteName}
-        url={publicRuntimeConfig.canonicalDomain}
-        logo={`${publicRuntimeConfig.canonicalDomain}/logo.png`}
+        name={siteName}
+        url={process.env.NEXT_PUBLIC_SITE_URL}
+        logo={`${process.env.NEXT_PUBLIC_SITE_URL}/logo.png`}
       />
       <SocialProfileJsonLd
         type="Organization"
-        name={publicRuntimeConfig.siteName}
-        url={publicRuntimeConfig.canonicalDomain}
+        name={siteName}
+        url={process.env.NEXT_PUBLIC_SITE_URL}
         sameAs={[
           "https://www.facebook.com/wakelabstudio",
           "https://www.instagram.com/wakelabstudio/",

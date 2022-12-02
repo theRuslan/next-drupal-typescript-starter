@@ -3,14 +3,13 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
+import { GetStaticPropsContext, NextPage } from "next/types";
 
+import getCanonicalUrl from "@/helpers/getCanonicalUrl";
 import { Heading, Link as ChakraLink } from "@chakra-ui/layout";
-import generateCanonicalUrl from "@helpers/generateCanonicalUrl";
 
-import type { GetStaticPropsContext, NextPage } from "next/types";
-
-const Wrapper = dynamic(() => import("@components/Layout/Wrapper"));
-const Container = dynamic(() => import("@components/Layout/Container"));
+const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"));
+const Container = dynamic(() => import("@/components/Layout/Container"));
 
 export async function getStaticProps(context: GetStaticPropsContext) {
   const translation = await serverSideTranslations(context.locale as string, [
@@ -27,7 +26,9 @@ export async function getStaticProps(context: GetStaticPropsContext) {
 
 const Home: NextPage = () => {
   const { t } = useTranslation("common");
-  const { route, locale, defaultLocale } = useRouter();
+  const router = useRouter();
+  const seoTitle = t("frontTitle");
+  const seoDesc = t("frontDesc");
 
   const headingLink = (
     <ChakraLink
@@ -44,14 +45,9 @@ const Home: NextPage = () => {
   return (
     <>
       <NextSeo
-        title={t("frontTitle")}
-        description={t("frontDesc")}
-        canonical={generateCanonicalUrl(
-          route,
-          undefined,
-          locale,
-          defaultLocale
-        )}
+        title={seoTitle}
+        description={seoDesc}
+        canonical={getCanonicalUrl(router)}
       />
 
       <Wrapper>

@@ -1,19 +1,17 @@
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
-import React from "react";
 
-import LogoStarter from "@components/Logos/LogoStarter";
+import LogoStarter from "@/components/Logos/LogoStarter";
 
 const LogoBox = () => {
   const { t } = useTranslation("common");
+  const linkTitle = t("backToFront");
 
   return (
-    <Link href="/">
-      <a title={t("backToFront")}>
-        <LogoStarter boxSize="36px" />
-      </a>
+    <Link href="/" title={linkTitle}>
+      <LogoStarter boxSize="36px" />
     </Link>
   );
 };
 
-export default React.memo(LogoBox);
+export default LogoBox;

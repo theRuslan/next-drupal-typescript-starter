@@ -1,6 +1,5 @@
 import { Icon } from "@chakra-ui/icons";
-
-import type { ChakraProps } from "@chakra-ui/system";
+import { ChakraProps } from "@chakra-ui/system";
 
 const LogoWakeLab = (props: ChakraProps) => (
   <Icon viewBox="0 0 150 52" {...props}>

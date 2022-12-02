@@ -1,10 +1,10 @@
-import { drupal } from "@lib/drupal";
+import { NextApiRequest, NextApiResponse } from "next";
 
-import type { NextApiRequest, NextApiResponse } from "next";
+import { drupal } from "@/lib/drupal";
 
 export default async function handler(
   request: NextApiRequest,
-  response: NextApiResponse
+  response: NextApiResponse | any // temporary added any type
 ) {
   return await drupal.preview(request, response);
 }

@@ -1,13 +1,13 @@
-import React from "react";
+import { useEffect, useState } from "react";
 
 import { Flex } from "@chakra-ui/layout";
 import { useBreakpoint } from "@chakra-ui/media-query";
 
 const BPIndicator = () => {
   const currentBP = useBreakpoint();
-  const [show, setShow] = React.useState(false);
+  const [show, setShow] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     !process.env.NODE_ENV ||
       (process.env.NODE_ENV === "development" && setShow(true));
   }, []);
