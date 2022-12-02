@@ -1,33 +1,29 @@
+import { useScroll } from "framer-motion";
 import dynamic from "next/dynamic";
-import React from "react";
+import { useCallback, useEffect, useState } from "react";
 
+import LogoBox from "@/components/Logos/LogoBox";
 import { Flex, Grid } from "@chakra-ui/layout";
-import LogoBox from "@components/Logos/LogoBox";
-import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
-const Wrapper = dynamic(() => import("@components/Layout/Wrapper"));
-const Container = dynamic(() => import("@components/Layout/Container"));
+const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"));
+const Container = dynamic(() => import("@/components/Layout/Container"));
 const LanguageSwitcher = dynamic(
-  () => import("@components/Layout/LanguageSwitcher")
+  () => import("@/components/Layout/LanguageSwitcher")
 );
-const Nav = dynamic(() => import("@components/Layout/Nav"));
-// const SearchBox = dynamic(() => import("@components/Layout/SearchBox"));
+const Nav = dynamic(() => import("@/components/Layout/Nav"));
 
 const HeaderDesktop = () => {
-  const [isScrolled, setIsScrolled] = React.useState(false);
+  const { scrollY } = useScroll();
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  useScrollPosition(
-    ({ currPos }) => {
-      const scrolled = currPos.y < -300;
+  useEffect(() => {
+    scrollY.onChange(() => {
+      const scrolled = scrollY.get() > 300;
       if (scrolled !== isScrolled) setIsScrolled(scrolled);
-    },
-    [isScrolled],
-    undefined,
-    false,
-    10
-  );
+    });
+  }, [isScrolled, scrollY]);
 
-  const Bar = React.useCallback(
+  const Bar = useCallback(
     () => (
       <>
         <Grid gridTemplateColumns="repeat(12,1fr)" width="full">
@@ -64,7 +60,7 @@ const HeaderDesktop = () => {
     []
   );
 
-  const HeaderDesktopStatic = React.useCallback(
+  const HeaderDesktopStatic = useCallback(
     () => (
       <Wrapper
         as="header"
@@ -90,7 +86,7 @@ const HeaderDesktop = () => {
     [Bar]
   );
 
-  const HeaderDesktopSticky = React.useCallback(
+  const HeaderDesktopSticky = useCallback(
     () => (
       <Wrapper
         as="header"

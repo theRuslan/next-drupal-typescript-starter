@@ -2,9 +2,9 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+import routes from "@/lib/routes";
 import { Flex, Text } from "@chakra-ui/layout";
 import { ChakraComponent } from "@chakra-ui/system";
-import routes from "@lib/routes";
 
 type NavProps = ChakraComponent<
   "div",
@@ -20,22 +20,6 @@ const Nav = (({ vertical, size, ...props }) => {
       id: "home",
       path: routes.home,
     },
-    {
-      id: "examplePageSSG",
-      path: routes.examplePageSSG,
-    },
-    {
-      id: "examplePageSSR",
-      path: routes.examplePageSSR,
-    },
-    {
-      id: "examplePageISR",
-      path: routes.examplePageISR,
-    },
-    {
-      id: "exampleSearch",
-      path: routes.exampleSearch,
-    },
   ];
 
   return (
@@ -43,16 +27,14 @@ const Nav = (({ vertical, size, ...props }) => {
       <Flex as="nav" direction={vertical ? "column" : "row"}>
         {navData.map((item) => (
           <Link key={item.id} href={item.path}>
-            <a>
-              <Text
-                textStyle={
-                  route === item.path ? "navigationActive" : "navigation"
-                }
-                {...props}
-              >
-                {t(item.id)}
-              </Text>
-            </a>
+            <Text
+              textStyle={
+                route === item.path ? "navigationActive" : "navigation"
+              }
+              {...props}
+            >
+              {t(item.id)}
+            </Text>
           </Link>
         ))}
       </Flex>

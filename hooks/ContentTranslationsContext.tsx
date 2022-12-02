@@ -1,6 +1,12 @@
-import React from "react";
-
-import type { Dispatch, SetStateAction } from "react";
+import {
+  createContext,
+  Dispatch,
+  FC,
+  ReactNode,
+  SetStateAction,
+  useContext,
+  useState,
+} from "react";
 
 export type ContextTranslationProps = {
   label: string;
@@ -14,7 +20,7 @@ export type ContentTranslationsContextProps = {
 };
 
 type CTCPProps = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 const defaultValue: ContentTranslationsContextProps = {
@@ -23,13 +29,13 @@ const defaultValue: ContentTranslationsContextProps = {
 };
 
 export const ContentTranslationsContext =
-  React.createContext<ContentTranslationsContextProps>(defaultValue);
+  createContext<ContentTranslationsContextProps>(defaultValue);
 
-export const ContentTranslationsContextProvider: React.FC<CTCPProps> = ({
+export const ContentTranslationsContextProvider: FC<CTCPProps> = ({
   children,
 }) => {
   const [contentTranslationsContextState, setContentTranslationsContextState] =
-    React.useState();
+    useState();
 
   return (
     <ContentTranslationsContext.Provider
@@ -44,4 +50,4 @@ export const ContentTranslationsContextProvider: React.FC<CTCPProps> = ({
 };
 
 export const useContentTranslationsContext = () =>
-  React.useContext(ContentTranslationsContext);
+  useContext(ContentTranslationsContext);

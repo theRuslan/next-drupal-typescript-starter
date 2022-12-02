@@ -1,12 +1,14 @@
 import { useTranslation } from "next-i18next";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
+import { Key } from "react";
 
+import {
+  ContextTranslationProps,
+  useContentTranslationsContext,
+} from "@/hooks/ContentTranslationsContext";
 import { Flex, Link, Text } from "@chakra-ui/layout";
 import { ChakraComponent } from "@chakra-ui/system";
-import { useContentTranslationsContext } from "@hooks/ContentTranslationsContext";
-
-import type { ContextTranslationProps } from "@hooks/ContentTranslationsContext";
 
 type LanguageSwitcherProps = ChakraComponent<
   "div",
@@ -34,7 +36,7 @@ const LanguageSwitcher = (({ size, color, ...props }) => {
   const NextjsMode = () => (
     <>
       {locales &&
-        locales.map((locale, key: React.Key) => (
+        locales.map((locale, key: Key) => (
           <SwitcherLink key={key} locale={locale} href={asPath} />
         ))}
     </>
@@ -43,7 +45,7 @@ const LanguageSwitcher = (({ size, color, ...props }) => {
   const DrupalMode = () => (
     <>
       {locales &&
-        locales.map((locale, key: React.Key) => {
+        locales.map((locale, key: Key) => {
           const translationForLocale = contentTranslationsContextState?.filter(
             (translation: ContextTranslationProps) => {
               return translation.langcode === locale;

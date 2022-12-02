@@ -1,10 +1,11 @@
-import type { ChakraProps } from "@chakra-ui/system";
-import type {
-  DrupalNode,
+import {
   DrupalMedia,
+  DrupalNode,
   DrupalParagraph,
   DrupalTaxonomyTerm,
 } from "next-drupal";
+
+import { ChakraProps } from "@chakra-ui/system";
 
 export type ExampleType = {
   props?: ChakraProps;

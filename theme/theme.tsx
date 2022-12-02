@@ -1,7 +1,7 @@
+import Button from "@/theme/components/Button";
+import Heading from "@/theme/components/Heading";
+import Link from "@/theme/components/Link";
 import { extendTheme } from "@chakra-ui/react";
-import Button from "@theme/components/Button";
-import Heading from "@theme/components/Heading";
-import Link from "@theme/components/Link";
 
 const theme = extendTheme({
   colors: {
