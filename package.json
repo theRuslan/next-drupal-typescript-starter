@@ -16,7 +16,7 @@
     "lint": "next lint",
     "preview": "next build && next start",
     "analyze": "ANALYZE=true next build",
-    "gen:theme-typings": "chakra-cli tokens ./theme/theme.tsx",
+    "gen:theme-typings": "chakra-cli tokens --strict-token-types ./theme/theme.tsx",
     "postinstall": "yarn gen:theme-typings",
     "cleanup": "rm -rf ./.next/",
     "preci": "rm -fr node_modules",
