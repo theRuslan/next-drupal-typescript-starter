@@ -31,7 +31,7 @@
     "@emotion/styled": "^11.10.5",
     "@fontsource/manrope": "^4.5.12",
     "drupal-jsonapi-params": "^2.1.0",
-    "framer-motion": "^7.6.18",
+    "framer-motion": "^7.6.19",
     "i18next": "^22.1.4",
     "next": "^13.0.6",
     "next-drupal": "^1.6.0",
