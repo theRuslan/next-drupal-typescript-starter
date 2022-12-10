@@ -1,9 +1,9 @@
 {
   "name": "next-drupal-typescript-starter",
   "version": "0.1.4",
-  "private": false,
+  "private": true,
   "engines": {
-    "node": "^16"
+    "node": "^18"
   },
   "config": {
     "port": "3000"
