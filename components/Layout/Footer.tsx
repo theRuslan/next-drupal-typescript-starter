@@ -8,7 +8,7 @@ const Container = dynamic(() => import("@/components/Layout/Container"));
 const LogoWakeLab = dynamic(() => import("@/components/Logos/LogoWakeLab"));
 
 const Footer = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
   const today = new Date();
   const year = today.getFullYear();
 

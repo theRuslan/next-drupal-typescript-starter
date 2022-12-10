@@ -25,7 +25,7 @@ export async function getStaticProps(context: GetStaticPropsContext) {
 }
 
 const Home: NextPage = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
   const router = useRouter();
   const seoTitle = t("frontTitle");
   const seoDesc = t("frontDesc");

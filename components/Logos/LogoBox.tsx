@@ -4,7 +4,7 @@ import Link from "next/link";
 import LogoStarter from "@/components/Logos/LogoStarter";
 
 const LogoBox = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
   const linkTitle = t("backToFront");
 
   return (

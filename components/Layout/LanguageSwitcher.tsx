@@ -17,7 +17,7 @@ type LanguageSwitcherProps = ChakraComponent<
 
 const LanguageSwitcher = (({ size, color, ...props }) => {
   const { locales, asPath, locale: currentLocale, route } = useRouter();
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
   const { contentTranslationsContextState } = useContentTranslationsContext();
 
   const SwitcherLink = ({ locale, href }: { locale: string; href: string }) => (

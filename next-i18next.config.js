@@ -8,6 +8,7 @@ const nextI18nextConfig = {
     localeDetection: false,
   },
   localePath: path.resolve("locales"),
+  defaultNS: "common",
   reloadOnPrerender: process.env.NODE_ENV !== "production",
   debug: false,
 };
