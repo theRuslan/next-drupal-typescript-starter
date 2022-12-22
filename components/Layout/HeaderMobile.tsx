@@ -21,7 +21,7 @@ const Nav = dynamic(() => import("@/components/Layout/Nav"));
 // const SearchBox = dynamic(() => import("@/components/Layout/SearchBox"));
 
 const HeaderMobile = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
   const { events } = useRouter();
   const { scrollY } = useScroll();
   const [extendedState, setExtendedState] = useState(false);

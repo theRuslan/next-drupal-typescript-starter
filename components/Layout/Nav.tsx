@@ -12,7 +12,7 @@ type NavProps = ChakraComponent<
 >;
 
 const Nav = (({ vertical, size, ...props }) => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
   const { route } = useRouter();
 
   const navData = [
