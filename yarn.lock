@@ -1002,10 +1002,10 @@
     "@chakra-ui/visually-hidden" "2.0.13"
     "@zag-js/focus-visible" "0.1.0"
 
-"@chakra-ui/cli@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/cli/-/cli-2.2.0.tgz#7a85aca1ce950a9112d330bba4e584438ba4e8ff"
-  integrity sha512-JhfRq9iXdWMdC4OYfrGc0rL1wtwkVl6hoOwC3ZhHwBi937RgfuthS62UIak+0Pc9Sxpo7ST0O6xWgWzbVnppBw==
+"@chakra-ui/cli@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/cli/-/cli-2.2.1.tgz#1477e334678639fb20a5c7363717b4aa62994e50"
+  integrity sha512-xHy2ch1pGqUqn3pUq3H9FVX8aLvop6Jn4kXbpNOxMirhbKmj4EJw6kRgAVDhkgeYpXvG5BAYoVVYnZVPvBVdiQ==
   dependencies:
     "@swc/core" "^1.2.177"
     chokidar "^3.5.3"
@@ -1014,7 +1014,6 @@
     cli-welcome "^2.2.2"
     commander "^9.3.0"
     lodash.throttle "^4.1.1"
-    module-alias "^2.2.2"
     ora "^5.3.0"
     prettier "^2.7.1"
     regenerator-runtime "^0.13.7"
@@ -5217,11 +5216,6 @@ mkdirp@*:
   integrity sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw==
   dependencies:
     minimist "^1.2.6"
-
-module-alias@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/module-alias/-/module-alias-2.2.2.tgz#151cdcecc24e25739ff0aa6e51e1c5716974c0e0"
-  integrity sha512-A/78XjoX2EmNvppVWEhM2oGk3x4lLxnkEA4jTbaK97QKSDjkIoOsKQlfylt/d3kKKi596Qy3NP5XrXJ6fZIC9Q==
 
 mrmime@^1.0.0:
   version "1.0.1"
