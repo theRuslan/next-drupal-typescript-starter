@@ -45,7 +45,7 @@
     "react-gtm-module": "^2.0.11",
     "react-i18next": "^12.1.1",
     "safe-json-stringify": "^1.2.0",
-    "sharp": "^0.31.2"
+    "sharp": "^0.31.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.5",
