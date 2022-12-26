@@ -52,7 +52,7 @@
     "@chakra-ui/cli": "^2.2.1",
     "@chakra-ui/system": "^2.3.5",
     "@next/bundle-analyzer": "^13.0.7",
-    "@next/env": "^13.0.7",
+    "@next/env": "^13.1.1",
     "@types/node": "^18.11.17",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^18.0.26",
