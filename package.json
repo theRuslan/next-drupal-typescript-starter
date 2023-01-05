@@ -48,7 +48,7 @@
     "sharp": "^0.31.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.7",
+    "@babel/core": "^7.20.12",
     "@chakra-ui/cli": "^2.3.0",
     "@chakra-ui/system": "^2.3.7",
     "@next/bundle-analyzer": "^13.1.1",
