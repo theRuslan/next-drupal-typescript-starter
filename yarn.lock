@@ -1887,10 +1887,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@fontsource/manrope@^4.5.12":
-  version "4.5.12"
-  resolved "https://registry.yarnpkg.com/@fontsource/manrope/-/manrope-4.5.12.tgz#a3dc6427bc67037a3355084d214203ed74d696ef"
-  integrity sha512-s2G9tvaG8+p4OcxbYH9KS7JpgC+Tz2q7GNJLdKQJ/L2DrQZs6e0ARDhcA3KTTU/sVIE6MRfNPXvds8DNoQgEZw==
+"@fontsource/manrope@^4.5.13":
+  version "4.5.13"
+  resolved "https://registry.yarnpkg.com/@fontsource/manrope/-/manrope-4.5.13.tgz#c78c3141c506baace10a6ae304f2d56bc2f5217a"
+  integrity sha512-UFN5DMGBp8nFpwhPQXfpSbsEm4OVISqUKQy+rA+pb1zYGoH+OGN1woKEND8VLx+pC7rY3nrPRCJvSuuOaNdW7Q==
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
