@@ -3605,10 +3605,10 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-drupal-jsonapi-params@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/drupal-jsonapi-params/-/drupal-jsonapi-params-2.1.0.tgz#03d67ed9523c33dde1e62fb4311b5d17e7a5d123"
-  integrity sha512-s8eVK5bDfMbVoutqXo9bEnE8+5p6lDUlylTC/N2OdxAB3dgzet6sFNyKxh0D8TUi3w/CgmiGYI1qdLLcLIS14g==
+drupal-jsonapi-params@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/drupal-jsonapi-params/-/drupal-jsonapi-params-2.2.0.tgz#11e13bd478d8fa885a5309644cd3f36af5551c6d"
+  integrity sha512-0IQiKBogl3ZR+XNO7ZTEd3TJaMfUlyUEJ1eotBXmmYs/JRVk8oADNZayULbnySnxfp9A9JHNI3TYwVYiHE0HrQ==
   dependencies:
     qs "^6.10.3"
 
