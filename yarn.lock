@@ -4117,10 +4117,10 @@ follow-redirects@^1.14.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
   integrity sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==
 
-framer-motion@^9.0.2:
-  version "9.0.2"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-9.0.2.tgz#b599beb987ca1341e32ec5a2a9c667f2143976e9"
-  integrity sha512-n7ZdIUBrT1xklowQNRQ6/h54+3ysmz422CP0rrhjE1X2tshiJy0WWQ7tv6y/fcOSQd23htNA9vvbUFLYMQ5lEQ==
+framer-motion@^9.0.3:
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-9.0.3.tgz#ff61c077c3ced378fd500f7a6431527403be7837"
+  integrity sha512-QcMWXcwvBmInzFpkIgtLx8VQ/+H9+EhiHVgnx6zsOWTGmcvzFqkrw6SLTZn5fKejCaf3RznqkshhxXipBpe9ig==
   dependencies:
     "@motionone/dom" "^10.15.3"
     hey-listen "^1.0.8"
