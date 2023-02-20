@@ -28,7 +28,7 @@
     "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/react": "^2.4.6",
     "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5",
+    "@emotion/styled": "^11.10.6",
     "@fontsource/manrope": "^4.5.13",
     "drupal-jsonapi-params": "^2.2.0",
     "framer-motion": "^9.0.2",
