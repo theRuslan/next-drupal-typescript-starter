@@ -1985,10 +1985,15 @@
   dependencies:
     webpack-bundle-analyzer "4.7.0"
 
-"@next/env@13.2.1", "@next/env@^13.2.1":
+"@next/env@13.2.1":
   version "13.2.1"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-13.2.1.tgz#082d42cfc0c794e9185d7b4133d71440ba2e795d"
   integrity sha512-Hq+6QZ6kgmloCg8Kgrix+4F0HtvLqVK3FZAnlAoS0eonaDemHe1Km4kwjSWRE3JNpJNcKxFHF+jsZrYo0SxWoQ==
+
+"@next/env@^13.2.2":
+  version "13.2.2"
+  resolved "https://registry.yarnpkg.com/@next/env/-/env-13.2.2.tgz#52761a775ad9cf241a6973bd72afba6ba10a4e0c"
+  integrity sha512-sBcFEJS8j2cNQemYy07TKUd8lSWj3/mzFA4GCTr/4T4LfYiw5Ep+PZ06AuFdR3z+jIZt9YqaXwUYi1J4p4yABQ==
 
 "@next/eslint-plugin-next@13.2.1":
   version "13.2.1"
