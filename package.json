@@ -64,7 +64,7 @@
     "cli-real-favicon": "^0.0.8",
     "eslint": "^8.35.0",
     "eslint-config-next": "^13.2.3",
-    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-prettier": "^8.7.0",
     "typescript": "^4.9.5",
     "webpack": "^5.75.0"
   }
