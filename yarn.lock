@@ -5239,10 +5239,10 @@ next-drupal@^1.6.0:
     react "^17.0.2 || ^18"
     react-dom "^17.0.2 || ^18"
 
-next-i18next@^13.1.6:
-  version "13.1.6"
-  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-13.1.6.tgz#9884474861c4d949860694b6a26f8234a743aae8"
-  integrity sha512-Lgr3s3L20nAev9eJSdrXiZGZjKK69ZtH5xvu2307GfseSDtXNsZvqjNDBgucULBIbzxCsp/pmo21DdCLEUsFaw==
+next-i18next@^13.2.2:
+  version "13.2.2"
+  resolved "https://registry.yarnpkg.com/next-i18next/-/next-i18next-13.2.2.tgz#9609546fab1d1d5f9b227e86c5ca23d0cbbbddb4"
+  integrity sha512-t0WU6K+HJoq2nVQ0n6OiiEZja9GyMqtDSU74FmOafgk4ljns+iZ18bsNJiI8rOUXfFfkW96ea1N7D5kbMyT+PA==
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@types/hoist-non-react-statics" "^3.3.1"
