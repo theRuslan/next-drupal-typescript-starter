@@ -32,7 +32,7 @@
     "@fontsource/manrope": "^4.5.13",
     "drupal-jsonapi-params": "^2.2.0",
     "framer-motion": "^10.0.1",
-    "i18next": "^22.4.10",
+    "i18next": "^22.4.13",
     "next": "^13.2.3",
     "next-drupal": "^1.6.0",
     "next-i18next": "^13.1.6",
