@@ -53,7 +53,7 @@
     "@chakra-ui/system": "^2.5.1",
     "@next/bundle-analyzer": "^13.2.3",
     "@next/env": "^13.2.3",
-    "@types/node": "^18.15.9",
+    "@types/node": "^18.15.10",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
