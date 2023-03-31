@@ -57,7 +57,7 @@ const LanguageSwitcher = (({ size, color, ...props }) => {
               <SwitcherLink
                 key={key}
                 locale={locale}
-                href={translationForLocale[0].path}
+                href={translationForLocale[0]?.path || ""}
               />
             );
           }
