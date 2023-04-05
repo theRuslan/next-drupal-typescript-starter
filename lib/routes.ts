@@ -1,5 +1,5 @@
 const routes = {
-  home: "/",
+  home: "/"
 
   // paths can be functions
   // this also makes it easier to change from "id" to "slug" in the future
@@ -9,6 +9,6 @@ const routes = {
   //     as: `/products/${pid}`,
   //   };
   // },
-};
+}
 
-export default routes;
+export default routes

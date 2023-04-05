@@ -1,36 +1,36 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react"
 
 type HeaderColorContext = {
-  color: string;
-  updateColor: (color: string) => void;
-};
+  color: string
+  updateColor: (color: string) => void
+}
 
-export const initialColor = "black";
-export const secondColor = "white";
+export const initialColor = "black"
+export const secondColor = "white"
 
 export const HeaderColorContext = createContext<HeaderColorContext>({
   color: initialColor,
-  updateColor: () => {},
-});
+  updateColor: () => void {}
+})
 
 export const HeaderColorContextProvider = (prop: {
-  value?: string;
-  children: JSX.Element | JSX.Element[];
+  value?: string
+  children: JSX.Element | JSX.Element[]
 }) => {
-  const [color, setColor] = useState<string>(prop.value || initialColor);
+  const [color, setColor] = useState<string>(prop.value || initialColor)
 
   const updateColor = (color: string) => {
-    setColor(color);
-  };
+    setColor(color)
+  }
 
   return (
     <HeaderColorContext.Provider value={{ color, updateColor }}>
       {prop.children}
     </HeaderColorContext.Provider>
-  );
-};
+  )
+}
 
 export const useHeaderColor = () =>
-  useContext(HeaderColorContext) as HeaderColorContext;
+  useContext(HeaderColorContext) as HeaderColorContext
 
-export default useHeaderColor;
+export default useHeaderColor

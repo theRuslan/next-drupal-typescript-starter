@@ -1,16 +1,15 @@
-import { useTranslation } from "next-i18next";
-import dynamic from "next/dynamic";
+import { Flex, Link, Text } from "@chakra-ui/react"
+import dynamic from "next/dynamic"
+import { useTranslation } from "next-i18next"
 
-import { Flex, Link, Text } from "@chakra-ui/layout";
-
-const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"));
-const Container = dynamic(() => import("@/components/Layout/Container"));
-const LogoWakeLab = dynamic(() => import("@/components/Logos/LogoWakeLab"));
+const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"))
+const Container = dynamic(() => import("@/components/Layout/Container"))
+const LogoWakeLab = dynamic(() => import("@/components/Logos/LogoWakeLab"))
 
 const Footer = () => {
-  const { t } = useTranslation();
-  const today = new Date();
-  const year = today.getFullYear();
+  const { t } = useTranslation()
+  const today = new Date()
+  const year = today.getFullYear()
 
   return (
     <>
@@ -55,7 +54,7 @@ const Footer = () => {
         </Container>
       </Wrapper>
     </>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

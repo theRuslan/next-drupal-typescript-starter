@@ -1,5 +1,4 @@
-import { Flex, FlexProps } from "@chakra-ui/layout";
-import { forwardRef } from "@chakra-ui/system";
+import { Flex, type FlexProps, forwardRef } from "@chakra-ui/react"
 
 const Container = forwardRef<FlexProps, "div">((props, ref) => (
   <Flex
@@ -14,7 +13,7 @@ const Container = forwardRef<FlexProps, "div">((props, ref) => (
       md: "container.md",
       lg: "container.lg",
       xl: "container.xl",
-      "2xl": "container.2xl",
+      "2xl": "container.2xl"
       // "3xl": "container.3xl",
     }}
     maxWidth={{
@@ -23,11 +22,11 @@ const Container = forwardRef<FlexProps, "div">((props, ref) => (
       md: "container.md",
       lg: "container.lg",
       xl: "container.xl",
-      "2xl": "container.2xl",
+      "2xl": "container.2xl"
       // "3xl": "container.3xl",
     }}
     {...props}
   />
-));
+))
 
-export default Container;
+export default Container

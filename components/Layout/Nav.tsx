@@ -1,26 +1,25 @@
-import { useTranslation } from "next-i18next";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { ChakraComponent, Flex, Text } from "@chakra-ui/react"
+import Link from "next/link"
+import { useRouter } from "next/router"
+import { useTranslation } from "next-i18next"
 
-import routes from "@/lib/routes";
-import { Flex, Text } from "@chakra-ui/layout";
-import { ChakraComponent } from "@chakra-ui/system";
+import routes from "@/lib/routes"
 
 type NavProps = ChakraComponent<
   "div",
   { vertical?: boolean; color?: string; size?: string }
->;
+>
 
-const Nav = (({ vertical, size, ...props }) => {
-  const { t } = useTranslation();
-  const { route } = useRouter();
+const Nav = (({ vertical, ...props }) => {
+  const { t } = useTranslation()
+  const { route } = useRouter()
 
   const navData = [
     {
       id: "home",
-      path: routes.home,
-    },
-  ];
+      path: routes.home
+    }
+  ]
 
   return (
     <>
@@ -39,7 +38,7 @@ const Nav = (({ vertical, size, ...props }) => {
         ))}
       </Flex>
     </>
-  );
-}) as NavProps;
+  )
+}) as NavProps
 
-export default Nav;
+export default Nav

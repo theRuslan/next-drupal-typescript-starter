@@ -1,5 +1,4 @@
-import { Icon } from "@chakra-ui/icons";
-import { ChakraProps } from "@chakra-ui/system";
+import { type ChakraProps, Icon } from "@chakra-ui/react"
 
 const LogoStarter = (props: ChakraProps) => (
   <Icon viewBox="0 0 64 64" {...props}>
@@ -16,6 +15,6 @@ const LogoStarter = (props: ChakraProps) => (
       stroke="none"
     />
   </Icon>
-);
+)
 
-export default LogoStarter;
+export default LogoStarter

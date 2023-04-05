@@ -4,17 +4,17 @@ const nextSitemapConfig = {
   changefreq: "daily",
   priority: 0.7,
   sitemapSize: 5000,
-  exclude: ["/_offline", "/en/_offline", "/404", "/en/404"],
+  exclude: ["**/_offline", "**/404", "**/search"],
 
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [
       {
         userAgent: "*",
-        allow: "/",
-      },
-    ],
-  },
-};
+        allow: "/"
+      }
+    ]
+  }
+}
 
-module.exports = nextSitemapConfig;
+module.exports = nextSitemapConfig

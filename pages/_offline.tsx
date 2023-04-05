@@ -1,23 +1,22 @@
-import { GetStaticPropsContext, NextPage } from "next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import dynamic from "next/dynamic";
+import { Heading, Text } from "@chakra-ui/react"
+import { GetStaticPropsContext, NextPage } from "next"
+import dynamic from "next/dynamic"
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 
-import { Heading, Text } from "@chakra-ui/layout";
-
-const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"));
-const Container = dynamic(() => import("@/components/Layout/Container"));
+const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"))
+const Container = dynamic(() => import("@/components/Layout/Container"))
 
 export async function getStaticProps(context: GetStaticPropsContext) {
   const translation = await serverSideTranslations(context.locale as string, [
-    "common",
-  ]);
+    "common"
+  ])
 
   return {
     props: {
-      ...translation,
+      ...translation
     },
-    revalidate: 60,
-  };
+    revalidate: 60
+  }
 }
 
 const OfflinePage: NextPage = () => {
@@ -30,7 +29,7 @@ const OfflinePage: NextPage = () => {
         </Container>
       </Wrapper>
     </>
-  );
-};
+  )
+}
 
-export default OfflinePage;
+export default OfflinePage

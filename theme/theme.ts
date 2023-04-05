@@ -1,29 +1,30 @@
-import Button from "@/theme/components/Button";
-import Heading from "@/theme/components/Heading";
-import Link from "@/theme/components/Link";
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react"
+
+import Button from "@/theme/components/Button"
+import Heading from "@/theme/components/Heading"
+import Link from "@/theme/components/Link"
 
 const theme = extendTheme({
   colors: {
     primary: "#34ffc2",
     secondary: "#f0ff1f",
-    selection: "#794aff",
+    selection: "#794aff"
   },
 
   styles: {
     global: {
       "::selection": {
         backgroundColor: "selection",
-        color: "white",
+        color: "white"
       },
       body: {
         backgroundColor: "white",
-        color: "black",
+        color: "black"
       },
       "b, strong": {
-        fontWeight: "extrabold",
-      },
-    },
+        fontWeight: "extrabold"
+      }
+    }
   },
 
   breakpoints: {
@@ -33,12 +34,12 @@ const theme = extendTheme({
     lg: "992px",
     xl: "1200px",
     "2xl": "1400px",
-    "3xl": "1900px",
+    "3xl": "1900px"
   },
 
   space: {
     colPadding: "12px",
-    colGutter: "24px",
+    colGutter: "24px"
   },
 
   sizes: {
@@ -50,8 +51,8 @@ const theme = extendTheme({
       lg: "960px",
       xl: "1140px",
       "2xl": "1320px",
-      "3xl": "1820px",
-    },
+      "3xl": "1820px"
+    }
   },
 
   fonts: {
@@ -66,8 +67,8 @@ const theme = extendTheme({
       medium: 500,
       semibold: 600,
       bold: 700,
-      extrabold: 800,
-    },
+      extrabold: 800
+    }
   },
 
   fontSizes: {
@@ -79,7 +80,7 @@ const theme = extendTheme({
     28: "1.75rem",
     20: "1.25rem",
     18: "1.125rem",
-    16: "1rem",
+    16: "1rem"
   },
 
   textStyles: {},
@@ -87,8 +88,8 @@ const theme = extendTheme({
   components: {
     Button,
     Heading,
-    Link,
-  },
-});
+    Link
+  }
+})
 
-export default theme;
+export default theme

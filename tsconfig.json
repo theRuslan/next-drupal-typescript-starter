@@ -95,7 +95,7 @@
         "theme/*"
       ],
       "@/styles/*": [
-        "styles/*"
+        "assets/styles/*"
       ],
       "@/validations/*": [
         "validations/*"
@@ -141,14 +141,19 @@
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules",
+    ".git",
+    ".github",
     ".next",
     ".npm",
-    ".yarn",
     ".vscode",
-    "dist",
+    ".yarn",
+    "assets",
     "build",
     "coverage",
-    "cypress"
+    "cypress",
+    "dist",
+    "locales",
+    "node_modules",
+    "public"
   ]
 }

@@ -1,71 +1,282 @@
 {
   "name": "next-drupal-typescript-starter",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "private": true,
-  "engines": {
-    "node": "^18"
-  },
-  "config": {
-    "port": "3000"
-  },
   "scripts": {
     "dev": "next dev -p $npm_package_config_port",
-    "build": "next build",
-    "postbuild": "next-sitemap",
+    "lint": "next lint && stylelint '**/*.{css,scss}'",
+    "build": "next build && pnpm gen:sitemap",
+    "build:analyze": "cross-env ANALYZE=true pnpm build",
     "start": "next start -p $npm_package_config_port",
-    "lint": "next lint",
-    "preview": "next build && next start",
-    "analyze": "ANALYZE=true next build",
-    "gen:theme-typings": "chakra-cli tokens --strict-token-types ./theme/theme.tsx",
-    "postinstall": "yarn gen:theme-typings",
+    "tsc": "tsc --pretty --noEmit",
     "cleanup": "rm -rf ./.next/",
-    "preci": "rm -fr node_modules",
-    "ci": "yarn install --frozen-lockfile",
+    "gen:sitemap": "next-sitemap",
+    "gen:theme-typings": "chakra-cli tokens ./theme/theme.ts",
     "gen:favicon": "real-favicon generate faviconDescription.json faviconData.json ./public",
     "gen:favicon-update": "real-favicon check-for-update --fail-on-update faviconData.json"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.17",
-    "@chakra-ui/react": "^2.5.4",
+    "@chakra-ui/icons": "^2.0.18",
+    "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fontsource/manrope": "^4.5.13",
     "drupal-jsonapi-params": "^2.2.0",
     "framer-motion": "^10.10.0",
+    "get-video-id": "^3.6.5",
+    "html-react-parser": "^3.0.15",
+    "html-to-text": "^9.0.5",
     "i18next": "^22.4.14",
     "next": "^13.2.4",
     "next-drupal": "^1.6.0",
     "next-i18next": "^13.2.2",
     "next-pwa": "^5.6.0",
     "next-seo": "^6.0.0",
-    "next-sitemap": "^4.0.6",
     "nprogress": "^0.2.0",
+    "photoswipe": "^5.3.7",
+    "polished": "^4.2.2",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-gtm-module": "^2.0.11",
     "react-i18next": "^12.2.0",
+    "react-merge-refs": "^2.0.1",
+    "react-photoswipe-gallery": "^2.2.7",
+    "react-youtube": "^10.1.0",
     "safe-json-stringify": "^1.2.0",
-    "sharp": "^0.32.0"
+    "sharp": "^0.32.0",
+    "simplebar-react": "^3.2.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.3",
+    "@babel/core": "^7.21.4",
     "@chakra-ui/cli": "^2.3.0",
-    "@chakra-ui/system": "^2.5.1",
+    "@chakra-ui/system": "^2.5.5",
     "@next/bundle-analyzer": "^13.2.4",
-    "@next/env": "^13.2.3",
+    "@next/env": "^13.2.4",
+    "@next/eslint-plugin-next": "^13.2.4",
+    "@types/html-to-text": "^9.0.0",
     "@types/node": "^18.15.11",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "@types/react-gtm-module": "^2.0.1",
     "@types/safe-json-stringify": "^1.1.2",
+    "@types/youtube-player": "^5.5.7",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
-    "@typescript-eslint/parser": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.1",
+    "babel-loader": "^9.1.2",
     "cli-real-favicon": "^0.0.8",
+    "cross-env": "^7.0.3",
     "eslint": "^8.37.0",
-    "eslint-config-next": "^13.2.3",
+    "eslint-config-next": "^13.2.4",
     "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "next-sitemap": "^4.0.6",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "sass": "^1.60.0",
+    "stylelint": "^15.4.0",
+    "stylelint-config-standard": "^32.0.0",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-prettier": "^3.0.0",
     "typescript": "^5.0.3",
     "webpack": "^5.77.0"
+  },
+  "config": {
+    "port": "2000"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "prettier": {
+    "semi": false,
+    "singleQuote": false,
+    "arrowParens": "always",
+    "tabWidth": 2,
+    "printWidth": 80,
+    "trailingComma": "none"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "react",
+      "react-hooks",
+      "simple-import-sort",
+      "@typescript-eslint"
+    ],
+    "ignorePatterns": [
+      ".git",
+      ".github",
+      ".next",
+      ".npm",
+      ".vscode",
+      ".yarn",
+      "assets",
+      "build",
+      "coverage",
+      "cypress",
+      "dist",
+      "locales",
+      "node_modules",
+      "public"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:import/recommended",
+      "plugin:import/typescript",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "plugin:prettier/recommended",
+      "plugin:@next/next/recommended"
+    ],
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "react/react-in-jsx-scope": 0,
+      "react/display-name": 0,
+      "react/prop-types": 0,
+      "@typescript-eslint/explicit-function-return-type": 0,
+      "@typescript-eslint/explicit-member-accessibility": 0,
+      "@typescript-eslint/indent": 0,
+      "@typescript-eslint/member-delimiter-style": 0,
+      "@typescript-eslint/no-explicit-any": 0,
+      "@typescript-eslint/no-var-requires": 0,
+      "@typescript-eslint/no-use-before-define": 0,
+      "@typescript-eslint/ban-ts-comment": 0,
+      "simple-import-sort/imports": "warn",
+      "simple-import-sort/exports": "warn",
+      "react-hooks/exhaustive-deps": [
+        "warn",
+        {
+          "additionalHooks": "(useIsomorphicLayoutEffect)"
+        }
+      ],
+      "react/no-unescaped-entities": 0,
+      "curly": [
+        "error",
+        "multi-line"
+      ],
+      "react/jsx-no-target-blank": [
+        2,
+        {
+          "allowReferrer": true
+        }
+      ],
+      "@typescript-eslint/no-unused-vars": [
+        2,
+        {
+          "argsIgnorePattern": "^_"
+        }
+      ],
+      "no-console": [
+        1,
+        {
+          "allow": [
+            "warn",
+            "error"
+          ]
+        }
+      ],
+      "prettier/prettier": [
+        "warn"
+      ],
+      "@typescript-eslint/explicit-module-boundary-types": "off"
+    },
+    "settings": {
+      "import/parsers": {
+        "@typescript-eslint/parser": [
+          ".ts",
+          ".tsx"
+        ]
+      },
+      "import/resolver": {
+        "typescript": {
+          "alwaysTryTypes": true,
+          "project": "."
+        }
+      },
+      "react": {
+        "version": "detect"
+      }
+    }
+  },
+  "stylelint": {
+    "ignoreFiles": [
+      "**/*.{ts,tsx,js,jsx}"
+    ],
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-standard-scss",
+      "stylelint-prettier/recommended"
+    ],
+    "plugins": [
+      "stylelint-prettier"
+    ],
+    "rules": {
+      "scss/at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "tailwind",
+            "layer",
+            "apply",
+            "variants",
+            "responsive",
+            "screen",
+            "include",
+            "for",
+            "mixin",
+            "if",
+            "else",
+            "warn",
+            "return",
+            "function",
+            "use",
+            "each"
+          ]
+        }
+      ],
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global"
+          ]
+        }
+      ],
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "font-named-instance"
+          ]
+        }
+      ],
+      "no-descending-specificity": null,
+      "length-zero-no-unit": null,
+      "alpha-value-notation": null,
+      "selector-id-pattern": null,
+      "selector-class-pattern": null,
+      "property-no-vendor-prefix": null,
+      "value-no-vendor-prefix": null,
+      "scss/no-global-function-names": null,
+      "scss/double-slash-comment-empty-line-before": null
+    }
   }
 }

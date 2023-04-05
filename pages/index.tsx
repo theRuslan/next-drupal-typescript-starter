@@ -1,34 +1,34 @@
-import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { NextSeo } from "next-seo";
-import dynamic from "next/dynamic";
-import { useRouter } from "next/router";
-import { GetStaticPropsContext, NextPage } from "next/types";
+import { Heading, Link as ChakraLink } from "@chakra-ui/react"
+import dynamic from "next/dynamic"
+import { useRouter } from "next/router"
+import { GetStaticPropsContext, NextPage } from "next/types"
+import { useTranslation } from "next-i18next"
+import { serverSideTranslations } from "next-i18next/serverSideTranslations"
+import { NextSeo } from "next-seo"
 
-import getCanonicalUrl from "@/helpers/getCanonicalUrl";
-import { Heading, Link as ChakraLink } from "@chakra-ui/layout";
+import getCanonicalUrl from "@/helpers/getCanonicalUrl"
 
-const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"));
-const Container = dynamic(() => import("@/components/Layout/Container"));
+const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"))
+const Container = dynamic(() => import("@/components/Layout/Container"))
 
 export async function getStaticProps(context: GetStaticPropsContext) {
   const translation = await serverSideTranslations(context.locale as string, [
-    "common",
-  ]);
+    "common"
+  ])
 
   return {
     props: {
-      ...translation,
+      ...translation
     },
-    revalidate: 60,
-  };
+    revalidate: 60
+  }
 }
 
 const Home: NextPage = () => {
-  const { t } = useTranslation();
-  const router = useRouter();
-  const seoTitle = t("frontTitle");
-  const seoDesc = t("frontDesc");
+  const { t } = useTranslation()
+  const router = useRouter()
+  const seoTitle = t("frontTitle")
+  const seoDesc = t("frontDesc")
 
   const headingLink = (
     <ChakraLink
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
     >
       {t("frontTitle")}
     </ChakraLink>
-  );
+  )
 
   return (
     <>
@@ -94,7 +94,7 @@ const Home: NextPage = () => {
         </Container>
       </Wrapper>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
