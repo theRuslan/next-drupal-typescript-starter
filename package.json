@@ -1,6 +1,9 @@
 {
   "name": "next-drupal-typescript-starter",
   "version": "0.2.0",
+  "description": "Starter frontend template for decoupled Drupal projects based on Next.js, React, TypeScript, Next-Drupal, Chakra UI, i18n, SEO, PWA and other awesome stuff.",
+  "repository": "https://github.com/theRuslan/next-drupal-typescript-starter",
+  "author": "theRuslan <iam@theruslan.ru> (https://theruslan.ru)",
   "private": true,
   "scripts": {
     "dev": "next dev -p $npm_package_config_port",
