@@ -1,24 +1,21 @@
-import { useTranslation } from "next-i18next";
-import NextLink from "next/link";
-import { useRouter } from "next/router";
-import { Key } from "react";
+import { ChakraComponent, Flex, Link, Text } from "@chakra-ui/react"
+import NextLink from "next/link"
+import { useRouter } from "next/router"
+import { useTranslation } from "next-i18next"
+import { Key } from "react"
 
-import {
-  ContextTranslationProps,
-  useContentTranslationsContext,
-} from "@/hooks/ContentTranslationsContext";
-import { Flex, Link, Text } from "@chakra-ui/layout";
-import { ChakraComponent } from "@chakra-ui/system";
+import { useContentTranslationsContext } from "@/hooks/useContentTranslationsContext"
+import { DrupalContentTranslation } from "@/types/index"
 
 type LanguageSwitcherProps = ChakraComponent<
   "div",
   { color?: string; size?: string }
->;
+>
 
-const LanguageSwitcher = (({ size, color, ...props }) => {
-  const { locales, asPath, locale: currentLocale, route } = useRouter();
-  const { t } = useTranslation();
-  const { contentTranslationsContextState } = useContentTranslationsContext();
+const LanguageSwitcher = (({ color, ...props }) => {
+  const { locales, asPath, locale: currentLocale, route } = useRouter()
+  const { t } = useTranslation()
+  const { contentTranslationsContextState } = useContentTranslationsContext()
 
   const SwitcherLink = ({ locale, href }: { locale: string; href: string }) => (
     <NextLink locale={locale} href={href} passHref>
@@ -31,7 +28,7 @@ const LanguageSwitcher = (({ size, color, ...props }) => {
         {t(locale)}
       </Link>
     </NextLink>
-  );
+  )
 
   const NextjsMode = () => (
     <>
@@ -40,26 +37,26 @@ const LanguageSwitcher = (({ size, color, ...props }) => {
           <SwitcherLink key={key} locale={locale} href={asPath} />
         ))}
     </>
-  );
+  )
 
   const DrupalMode = () => (
     <>
       {locales &&
         locales.map((locale, key: Key) => {
           const translationForLocale = contentTranslationsContextState?.filter(
-            (translation: ContextTranslationProps) => {
-              return translation.langcode === locale;
+            (translation: DrupalContentTranslation) => {
+              return translation.langcode === locale
             }
-          );
+          )
 
           if (translationForLocale && translationForLocale.length > 0) {
             return (
               <SwitcherLink
                 key={key}
                 locale={locale}
-                href={translationForLocale[0].path}
+                href={translationForLocale[0]?.path || ""}
               />
-            );
+            )
           }
 
           return (
@@ -73,10 +70,10 @@ const LanguageSwitcher = (({ size, color, ...props }) => {
             >
               {t(locale)}
             </Text>
-          );
+          )
         })}
     </>
-  );
+  )
 
   return (
     <Flex as="nav" direction="row" {...props}>
@@ -86,7 +83,7 @@ const LanguageSwitcher = (({ size, color, ...props }) => {
         <NextjsMode />
       )}
     </Flex>
-  );
-}) as LanguageSwitcherProps;
+  )
+}) as LanguageSwitcherProps
 
-export default LanguageSwitcher;
+export default LanguageSwitcher

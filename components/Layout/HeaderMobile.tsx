@@ -1,56 +1,55 @@
-import { useScroll } from "framer-motion";
-import { useTranslation } from "next-i18next";
-import dynamic from "next/dynamic";
-import { useRouter } from "next/router";
-import { SyntheticEvent, useCallback, useEffect, useState } from "react";
+import { Flex, IconButton } from "@chakra-ui/react"
+import { useScroll } from "framer-motion"
+import dynamic from "next/dynamic"
+import { useRouter } from "next/router"
+import { useTranslation } from "next-i18next"
+import { SyntheticEvent, useCallback, useEffect, useState } from "react"
 
-import LogoBox from "@/components/Logos/LogoBox";
-import { IconButton } from "@chakra-ui/button";
-import { Flex } from "@chakra-ui/layout";
+import LogoBox from "@/components/Logos/LogoBox"
 
-const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"));
-const Container = dynamic(() => import("@/components/Layout/Container"));
-const IconClose = dynamic(() => import("@/icons/IconClose"));
-const IconMenu = dynamic(() => import("@/components/Icons/IconMenu"));
+const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"))
+const Container = dynamic(() => import("@/components/Layout/Container"))
+const IconClose = dynamic(() => import("@/icons/IconClose"))
+const IconMenu = dynamic(() => import("@/components/Icons/IconMenu"))
 
 const LanguageSwitcher = dynamic(
   () => import("@/components/Layout/LanguageSwitcher")
-);
+)
 
-const Nav = dynamic(() => import("@/components/Layout/Nav"));
+const Nav = dynamic(() => import("@/components/Layout/Nav"))
 // const SearchBox = dynamic(() => import("@/components/Layout/SearchBox"));
 
 const HeaderMobile = () => {
-  const { t } = useTranslation();
-  const { events } = useRouter();
-  const { scrollY } = useScroll();
-  const [extendedState, setExtendedState] = useState(false);
-  const [isForwardScroll, setIsForwardScroll] = useState(false);
+  const { t } = useTranslation()
+  const { events } = useRouter()
+  const { scrollY } = useScroll()
+  const [extendedState, setExtendedState] = useState(false)
+  const [isForwardScroll, setIsForwardScroll] = useState(false)
 
   const toggleExtendedState = useCallback(
     (e: SyntheticEvent) => {
-      e.preventDefault();
-      setExtendedState(!extendedState);
+      e.preventDefault()
+      setExtendedState(!extendedState)
     },
     [extendedState]
-  );
+  )
 
   useEffect(() => {
     const handleRouteChange = () => {
-      setExtendedState(false);
-    };
-    events.on("routeChangeComplete", handleRouteChange);
+      setExtendedState(false)
+    }
+    events.on("routeChangeComplete", handleRouteChange)
     return () => {
-      events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [events]);
+      events.off("routeChangeComplete", handleRouteChange)
+    }
+  }, [events])
 
   useEffect(() => {
     scrollY.onChange(() => {
-      const forwardScroll = scrollY.get() > scrollY.getPrevious();
-      if (forwardScroll !== isForwardScroll) setIsForwardScroll(forwardScroll);
-    });
-  }, [isForwardScroll, scrollY]);
+      const forwardScroll = scrollY.get() > scrollY.getPrevious()
+      if (forwardScroll !== isForwardScroll) setIsForwardScroll(forwardScroll)
+    })
+  }, [isForwardScroll, scrollY])
 
   const Bar = useCallback(
     () => (
@@ -89,7 +88,7 @@ const HeaderMobile = () => {
       </Wrapper>
     ),
     [extendedState, isForwardScroll, t, toggleExtendedState]
-  );
+  )
 
   const Extended = useCallback(
     () => (
@@ -137,7 +136,7 @@ const HeaderMobile = () => {
                 base: "24",
                 sm: "42",
                 md: "50",
-                lg: "55",
+                lg: "55"
               }}
               textTransform="lowercase"
               fontFamily="akzidenz"
@@ -148,9 +147,9 @@ const HeaderMobile = () => {
       </Wrapper>
     ),
     [extendedState, t, toggleExtendedState]
-  );
+  )
 
-  return extendedState ? <Extended /> : <Bar />;
-};
+  return extendedState ? <Extended /> : <Bar />
+}
 
-export default HeaderMobile;
+export default HeaderMobile

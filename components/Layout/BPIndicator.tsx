@@ -1,16 +1,14 @@
-import { useEffect, useState } from "react";
-
-import { Flex } from "@chakra-ui/layout";
-import { useBreakpoint } from "@chakra-ui/media-query";
+import { Flex, useBreakpoint } from "@chakra-ui/react"
+import { useEffect, useState } from "react"
 
 const BPIndicator = () => {
-  const currentBP = useBreakpoint();
-  const [show, setShow] = useState(false);
+  const currentBP = useBreakpoint()
+  const [show, setShow] = useState(false)
 
   useEffect(() => {
     !process.env.NODE_ENV ||
-      (process.env.NODE_ENV === "development" && setShow(true));
-  }, []);
+      (process.env.NODE_ENV === "development" && setShow(true))
+  }, [])
 
   return show ? (
     <Flex
@@ -27,7 +25,7 @@ const BPIndicator = () => {
     >
       {currentBP}
     </Flex>
-  ) : null;
-};
+  ) : null
+}
 
-export default BPIndicator;
+export default BPIndicator

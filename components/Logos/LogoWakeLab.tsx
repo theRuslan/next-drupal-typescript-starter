@@ -1,5 +1,4 @@
-import { Icon } from "@chakra-ui/icons";
-import { ChakraProps } from "@chakra-ui/system";
+import { type ChakraProps, Icon } from "@chakra-ui/react"
 
 const LogoWakeLab = (props: ChakraProps) => (
   <Icon viewBox="0 0 150 52" {...props}>
@@ -83,6 +82,6 @@ const LogoWakeLab = (props: ChakraProps) => (
       </linearGradient>
     </defs>
   </Icon>
-);
+)
 
-export default LogoWakeLab;
+export default LogoWakeLab

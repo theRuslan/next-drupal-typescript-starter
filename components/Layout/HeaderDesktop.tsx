@@ -1,27 +1,27 @@
-import { useScroll } from "framer-motion";
-import dynamic from "next/dynamic";
-import { useCallback, useEffect, useState } from "react";
+import { Flex, Grid } from "@chakra-ui/react"
+import { useScroll } from "framer-motion"
+import dynamic from "next/dynamic"
+import { useCallback, useEffect, useState } from "react"
 
-import LogoBox from "@/components/Logos/LogoBox";
-import { Flex, Grid } from "@chakra-ui/layout";
+import LogoBox from "@/components/Logos/LogoBox"
 
-const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"));
-const Container = dynamic(() => import("@/components/Layout/Container"));
+const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"))
+const Container = dynamic(() => import("@/components/Layout/Container"))
 const LanguageSwitcher = dynamic(
   () => import("@/components/Layout/LanguageSwitcher")
-);
-const Nav = dynamic(() => import("@/components/Layout/Nav"));
+)
+const Nav = dynamic(() => import("@/components/Layout/Nav"))
 
 const HeaderDesktop = () => {
-  const { scrollY } = useScroll();
-  const [isScrolled, setIsScrolled] = useState(false);
+  const { scrollY } = useScroll()
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     scrollY.onChange(() => {
-      const scrolled = scrollY.get() > 300;
-      if (scrolled !== isScrolled) setIsScrolled(scrolled);
-    });
-  }, [isScrolled, scrollY]);
+      const scrolled = scrollY.get() > 300
+      if (scrolled !== isScrolled) setIsScrolled(scrolled)
+    })
+  }, [isScrolled, scrollY])
 
   const Bar = useCallback(
     () => (
@@ -58,7 +58,7 @@ const HeaderDesktop = () => {
       </>
     ),
     []
-  );
+  )
 
   const HeaderDesktopStatic = useCallback(
     () => (
@@ -84,7 +84,7 @@ const HeaderDesktop = () => {
       </Wrapper>
     ),
     [Bar]
-  );
+  )
 
   const HeaderDesktopSticky = useCallback(
     () => (
@@ -115,9 +115,9 @@ const HeaderDesktop = () => {
       </Wrapper>
     ),
     [Bar]
-  );
+  )
 
-  return !isScrolled ? <HeaderDesktopStatic /> : <HeaderDesktopSticky />;
-};
+  return !isScrolled ? <HeaderDesktopStatic /> : <HeaderDesktopSticky />
+}
 
-export default HeaderDesktop;
+export default HeaderDesktop

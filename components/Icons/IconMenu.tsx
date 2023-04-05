@@ -1,5 +1,4 @@
-import { Icon } from "@chakra-ui/icons";
-import { ChakraProps } from "@chakra-ui/system";
+import { type ChakraProps, Icon } from "@chakra-ui/react"
 
 const IconMenu = (props: ChakraProps) => (
   <Icon viewBox="0 0 26 26" fill="currentColor" {...props}>
@@ -7,6 +6,6 @@ const IconMenu = (props: ChakraProps) => (
     <path d="M0 13C0 12.4477 0.447715 12 1 12H25C25.5523 12 26 12.4477 26 13C26 13.5523 25.5523 14 25 14H1C0.447716 14 0 13.5523 0 13Z" />
     <path d="M0 20C0 19.4477 0.447715 19 1 19H25C25.5523 19 26 19.4477 26 20C26 20.5523 25.5523 21 25 21H1C0.447716 21 0 20.5523 0 20Z" />
   </Icon>
-);
+)
 
-export default IconMenu;
+export default IconMenu
