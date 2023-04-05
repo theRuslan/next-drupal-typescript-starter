@@ -1,0 +1,75 @@
+name: Build
+concurrency: build_ci
+
+on:
+  # push:
+  #   branches: ["main"]
+  #   tags: [ v0.*, v1.*, v2.* ]
+  # pull_request:
+  #   branches: ["main", "production"]
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      reason:
+        # Friendly description to be shown in the UI instead of 'name'
+        description: "Reason to run"
+        # Default value if no value is explicitly provided
+        default: "Manual restart"
+        # Input has to be provided for the workflow to run
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+        pnpm-version: [8.x]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: ${{ matrix.pnpm-version }}
+
+      - name: Install Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+
+      - name: Use Cache
+        uses: actions/cache@v3
+        with:
+          # See here for caching with `yarn` https://github.com/actions/cache/blob/main/examples.md#node---yarn
+          # or you can leverage caching with actions/setup-node https://github.com/actions/setup-node
+          path: |
+            ${{ github.workspace }}/.next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}-
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+        env:
+          # setting variables
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
+          NEXT_PUBLIC_GTM_ID: ${{ vars.NEXT_PUBLIC_GTM_ID }}
+          NEXT_PUBLIC_DRUPAL_BASE_URL: ${{ vars.NEXT_PUBLIC_DRUPAL_BASE_URL }}
+          NEXT_IMAGE_DOMAIN: ${{ vars.NEXT_IMAGE_DOMAIN }}
+          DRUPAL_SITE_ID: ${{ vars.DRUPAL_SITE_ID }}
+          DRUPAL_FRONT_PAGE: ${{ vars.DRUPAL_FRONT_PAGE }}
+          # setting secrets
+          DRUPAL_CLIENT_ID: ${{ secrets.DRUPAL_CLIENT_ID }}
+          DRUPAL_CLIENT_SECRET: ${{ secrets.DRUPAL_CLIENT_SECRET }}
+          DRUPAL_PREVIEW_SECRET: ${{ secrets.DRUPAL_PREVIEW_SECRET }}
+          DRUPAL_REVALIDATE_SECRET: ${{ secrets.DRUPAL_REVALIDATE_SECRET }}
