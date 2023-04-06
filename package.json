@@ -98,10 +98,8 @@
     "node": "18.x"
   },
   "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
+    "defaults",
+    "node >18"
   ],
   "prettier": {
     "semi": false,
@@ -271,6 +269,7 @@
           ]
         }
       ],
+      "declaration-property-value-no-unknown": true,
       "no-descending-specificity": null,
       "length-zero-no-unit": null,
       "alpha-value-notation": null,
