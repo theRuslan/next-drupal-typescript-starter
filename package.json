@@ -86,7 +86,7 @@
     "sass": "^1.60.0",
     "stylelint": "^15.4.0",
     "stylelint-config-standard": "^32.0.0",
-    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-config-standard-scss": "^8.0.0",
     "stylelint-prettier": "^3.0.0",
     "typescript": "^5.0.3",
     "webpack": "^5.77.0"
