@@ -1,5 +1,12 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>theRuslan/renovate-config"
+    "config:base",
+    ":assignee(theRuslan)"
+  ],
+  "automerge": false,
+  "labels": [
+    "renovate",
+    "dependencies"
   ]
 }
