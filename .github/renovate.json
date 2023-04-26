@@ -1,5 +1,5 @@
 {
   "extends": [
-    "github>WakeLab/renovate-config"
+    "github>theRuslan/renovate-config"
   ]
 }
