@@ -14,8 +14,8 @@ dependencies:
     specifier: ^11.10.6
     version: 11.10.6(@emotion/react@11.10.6)(@types/react@18.0.33)(react@18.2.0)
   '@fontsource/manrope':
-    specifier: ^4.5.13
-    version: 4.5.13
+    specifier: ^5.0.0
+    version: 5.0.0
   drupal-jsonapi-params:
     specifier: ^2.2.0
     version: 2.2.0
@@ -2638,8 +2638,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/manrope@4.5.13:
-    resolution: {integrity: sha512-UFN5DMGBp8nFpwhPQXfpSbsEm4OVISqUKQy+rA+pb1zYGoH+OGN1woKEND8VLx+pC7rY3nrPRCJvSuuOaNdW7Q==}
+  /@fontsource/manrope@5.0.0:
+    resolution: {integrity: sha512-+vqgGHW8cQd7v4MM2em9Djrj5Q4qt2ECQaTKvQT1CxbR7l7JcArInjh3L1pUsKjpOQWHLJg2LzP9R//PA5x03w==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.8:

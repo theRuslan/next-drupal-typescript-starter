@@ -23,7 +23,7 @@
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
-    "@fontsource/manrope": "^4.5.13",
+    "@fontsource/manrope": "^5.0.0",
     "drupal-jsonapi-params": "^2.2.0",
     "framer-motion": "^10.10.0",
     "get-video-id": "^3.6.5",
