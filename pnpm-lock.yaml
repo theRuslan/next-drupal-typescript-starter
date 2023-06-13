@@ -112,8 +112,8 @@ devDependencies:
     specifier: ^13.2.4
     version: 13.2.4
   '@types/html-to-text':
-    specifier: ^9.0.0
-    version: 9.0.0
+    specifier: ^9.0.1
+    version: 9.0.1
   '@types/node':
     specifier: ^18.15.11
     version: 18.15.11
@@ -3124,8 +3124,8 @@ packages:
       hoist-non-react-statics: 3.3.2
     dev: false
 
-  /@types/html-to-text@9.0.0:
-    resolution: {integrity: sha512-FnF3p2FJZ1kJT/0C/lmBzw7HSlH3RhtACVYyrwUsJoCmFNuiLpusWT2FWWB7P9A48CaYpvD6Q2fprn7sZeffpw==}
+  /@types/html-to-text@9.0.1:
+    resolution: {integrity: sha512-sHu702QGb0SP2F0Zt+CxdCmGZIZ0gEaaCjqOh/V4iba1wTxPVntEPOM/vHm5bel08TILhB3+OxUTkDJWnr/zHQ==}
     dev: true
 
   /@types/json-schema@7.0.11:
