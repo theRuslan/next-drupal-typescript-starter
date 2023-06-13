@@ -61,7 +61,7 @@
     "@types/node": "^18.15.11",
     "@types/nprogress": "^0.2.0",
     "@types/react": "^18.0.33",
-    "@types/react-dom": "^18.0.11",
+    "@types/react-dom": "^18.2.5",
     "@types/react-gtm-module": "^2.0.1",
     "@types/safe-json-stringify": "^1.1.2",
     "@types/youtube-player": "^5.5.7",
