@@ -56,7 +56,7 @@
     "@chakra-ui/system": "^2.5.5",
     "@next/bundle-analyzer": "^13.2.4",
     "@next/env": "^13.2.4",
-    "@next/eslint-plugin-next": "^13.2.4",
+    "@next/eslint-plugin-next": "^13.4.5",
     "@types/html-to-text": "^9.0.0",
     "@types/node": "^18.15.11",
     "@types/nprogress": "^0.2.0",
