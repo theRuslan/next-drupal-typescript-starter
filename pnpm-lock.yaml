@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@chakra-ui/icons':
     specifier: ^2.0.19
@@ -42,7 +46,7 @@ dependencies:
     version: 1.6.0(@babel/core@7.22.5)(sass@1.63.4)
   next-i18next:
     specifier: ^13.3.0
-    version: 13.3.0(i18next@22.5.1)(next@13.4.5)(react-i18next@12.3.1)(react@18.2.0)
+    version: 13.3.0(i18next@22.5.1)(next@13.4.5)(react-i18next@13.0.0)(react@18.2.0)
   next-pwa:
     specifier: ^5.6.0
     version: 5.6.0(@babel/core@7.22.5)(next@13.4.5)(webpack@5.86.0)
@@ -71,8 +75,8 @@ dependencies:
     specifier: ^2.0.11
     version: 2.0.11
   react-i18next:
-    specifier: ^12.3.1
-    version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^13.0.0
+    version: 13.0.0(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
   react-merge-refs:
     specifier: ^2.0.2
     version: 2.0.2
@@ -6158,7 +6162,7 @@ packages:
       - sass
     dev: false
 
-  /next-i18next@13.3.0(i18next@22.5.1)(next@13.4.5)(react-i18next@12.3.1)(react@18.2.0):
+  /next-i18next@13.3.0(i18next@22.5.1)(next@13.4.5)(react-i18next@13.0.0)(react@18.2.0):
     resolution: {integrity: sha512-X4kgi51BCOoGdKbv87eZ8OU7ICQDg5IP+T5fNjqDY3os9ea0OKTY4YpAiVFiwcI9XimcUmSPbKO4a9jFUyYSgg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6175,7 +6179,7 @@ packages:
       i18next-fs-backend: 2.1.3
       next: 13.4.5(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.63.4)
       react: 18.2.0
-      react-i18next: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 13.0.0(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /next-pwa@5.6.0(@babel/core@7.22.5)(next@13.4.5)(webpack@5.86.0):
@@ -6801,10 +6805,10 @@ packages:
     resolution: {integrity: sha512-8gyj4TTxeP7eEyc2QKawEuQoAZdjKvMY4pgWfycGmqGByhs17fR+zEBs0JUDq4US/l+vbTl+6zvUIx27iDo/Vw==}
     dev: false
 
-  /react-i18next@12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-5v8E2XjZDFzK7K87eSwC7AJcAkcLt5xYZ4+yTPDAW1i7C93oOY1dnr4BaQM7un4Hm+GmghuiPvevWwlca5PwDA==}
+  /react-i18next@13.0.0(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-qRFbrSgynsBSjfnSTb/Um3mw9uPjOfDi4Iq2rMCuzfsRsYGdkEdyCr0i+T0bR0bG6xwULvK4k1oRVLLd7ZDBVw==}
     peerDependencies:
-      i18next: '>= 19.0.0'
+      i18next: '>= 23.0.1'
       react: '>= 16.8.0'
       react-dom: '*'
       react-native: '*'
