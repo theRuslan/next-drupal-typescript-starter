@@ -3,7 +3,7 @@ import { useScroll } from "framer-motion"
 import dynamic from "next/dynamic"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
-import { SyntheticEvent, useCallback, useEffect, useState } from "react"
+import { type SyntheticEvent, useCallback, useEffect, useState } from "react"
 
 import LogoBox from "@/components/Logos/LogoBox"
 

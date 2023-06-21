@@ -1,5 +1,5 @@
 import { Heading, Text } from "@chakra-ui/react"
-import { GetStaticPropsContext, NextPage } from "next"
+import type { GetStaticPropsContext, NextPage } from "next"
 import dynamic from "next/dynamic"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 

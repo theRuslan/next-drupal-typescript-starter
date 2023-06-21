@@ -1,11 +1,10 @@
-import { ChakraComponent, Flex, Link, Text } from "@chakra-ui/react"
+import { type ChakraComponent, Flex, Link, Text } from "@chakra-ui/react"
 import NextLink from "next/link"
 import { useRouter } from "next/router"
 import { useTranslation } from "next-i18next"
-import { Key } from "react"
 
 import { useContentTranslationsContext } from "@/hooks/useContentTranslationsContext"
-import { DrupalContentTranslation } from "@/types/index"
+import { type DrupalContentTranslation } from "@/types/index"
 
 type LanguageSwitcherProps = ChakraComponent<
   "div",
@@ -33,8 +32,8 @@ const LanguageSwitcher = (({ color, ...props }) => {
   const NextjsMode = () => (
     <>
       {locales &&
-        locales.map((locale, key: Key) => (
-          <SwitcherLink key={key} locale={locale} href={asPath} />
+        locales.map((locale) => (
+          <SwitcherLink key={locale} locale={locale} href={asPath} />
         ))}
     </>
   )
@@ -42,7 +41,7 @@ const LanguageSwitcher = (({ color, ...props }) => {
   const DrupalMode = () => (
     <>
       {locales &&
-        locales.map((locale, key: Key) => {
+        locales.map((locale) => {
           const translationForLocale = contentTranslationsContextState?.filter(
             (translation: DrupalContentTranslation) => {
               return translation.langcode === locale
@@ -52,7 +51,7 @@ const LanguageSwitcher = (({ color, ...props }) => {
           if (translationForLocale && translationForLocale.length > 0) {
             return (
               <SwitcherLink
-                key={key}
+                key={locale}
                 locale={locale}
                 href={translationForLocale[0]?.path || ""}
               />
@@ -61,7 +60,7 @@ const LanguageSwitcher = (({ color, ...props }) => {
 
           return (
             <Text
-              key={key}
+              key={locale}
               textStyle={
                 locale === currentLocale ? "navigationActive" : "navigation"
               }

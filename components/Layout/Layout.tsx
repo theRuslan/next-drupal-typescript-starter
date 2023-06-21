@@ -1,6 +1,6 @@
 import { Box, Flex } from "@chakra-ui/react"
 import dynamic from "next/dynamic"
-import { ReactNode } from "react"
+import { type ReactNode } from "react"
 
 const HeaderSwitcher = dynamic(
   () => import("@/components/Layout/HeaderSwitcher")
