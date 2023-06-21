@@ -8,7 +8,7 @@ import "@fontsource/manrope/800.css" // Extra Bold
 import "@/styles/nprogress.css"
 
 import { ChakraBaseProvider } from "@chakra-ui/react"
-import { AppProps } from "next/app"
+import { type AppProps } from "next/app"
 import dynamic from "next/dynamic"
 import { useRouter } from "next/router"
 import { appWithTranslation, useTranslation } from "next-i18next"

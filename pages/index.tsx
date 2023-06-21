@@ -1,7 +1,7 @@
 import { Heading, Link as ChakraLink } from "@chakra-ui/react"
 import dynamic from "next/dynamic"
 import { useRouter } from "next/router"
-import { GetStaticPropsContext, NextPage } from "next/types"
+import type { GetStaticPropsContext, NextPage } from "next/types"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import { NextSeo } from "next-seo"
