@@ -65,7 +65,7 @@
     "@types/react-gtm-module": "^2.0.1",
     "@types/safe-json-stringify": "^1.1.2",
     "@types/youtube-player": "^5.5.7",
-    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.0",
     "babel-loader": "^9.1.2",
     "cli-real-favicon": "^0.0.8",
