@@ -49,7 +49,7 @@ dependencies:
     version: 14.0.0(i18next@23.2.3)(next@13.4.7)(react-i18next@13.0.1)(react@18.2.0)
   next-pwa:
     specifier: ^5.6.0
-    version: 5.6.0(@babel/core@7.22.5)(next@13.4.7)(webpack@5.88.0)
+    version: 5.6.0(@babel/core@7.22.5)(next@13.4.7)(webpack@5.88.1)
   next-seo:
     specifier: ^6.1.0
     version: 6.1.0(next@13.4.7)(react-dom@18.2.0)(react@18.2.0)
@@ -147,7 +147,7 @@ devDependencies:
     version: 5.60.0(eslint@8.43.0)(typescript@5.1.3)
   babel-loader:
     specifier: ^9.1.2
-    version: 9.1.2(@babel/core@7.22.5)(webpack@5.88.0)
+    version: 9.1.2(@babel/core@7.22.5)(webpack@5.88.1)
   cli-real-favicon:
     specifier: ^0.0.8
     version: 0.0.8
@@ -212,8 +212,8 @@ devDependencies:
     specifier: ^5.1.3
     version: 5.1.3
   webpack:
-    specifier: ^5.88.0
-    version: 5.88.0
+    specifier: ^5.88.1
+    version: 5.88.1
 
 packages:
 
@@ -3750,7 +3750,7 @@ packages:
       dequal: 2.0.3
     dev: true
 
-  /babel-loader@8.3.0(@babel/core@7.22.5)(webpack@5.88.0):
+  /babel-loader@8.3.0(@babel/core@7.22.5)(webpack@5.88.1):
     resolution: {integrity: sha512-H8SvsMF+m9t15HNLMipppzkC+Y2Yq+v3SonZyU70RBL/h1gxPkH08Ot8pEE9Z4Kd+czyWJClmFS8qzIP9OZ04Q==}
     engines: {node: '>= 8.9'}
     peerDependencies:
@@ -3762,10 +3762,10 @@ packages:
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.88.0
+      webpack: 5.88.1
     dev: false
 
-  /babel-loader@9.1.2(@babel/core@7.22.5)(webpack@5.88.0):
+  /babel-loader@9.1.2(@babel/core@7.22.5)(webpack@5.88.1):
     resolution: {integrity: sha512-mN14niXW43tddohGl8HPu5yfQq70iUThvFL/4QzESA7GcZoC0eVOhvWdQ8+3UlSjaDE9MVtsW9mxDY07W7VpVA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -3775,7 +3775,7 @@ packages:
       '@babel/core': 7.22.5
       find-cache-dir: 3.3.2
       schema-utils: 4.2.0
-      webpack: 5.88.0
+      webpack: 5.88.1
     dev: true
 
   /babel-plugin-macros@3.1.0:
@@ -4043,14 +4043,14 @@ packages:
     resolution: {integrity: sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==}
     engines: {node: '>=6.0'}
 
-  /clean-webpack-plugin@4.0.0(webpack@5.88.0):
+  /clean-webpack-plugin@4.0.0(webpack@5.88.1):
     resolution: {integrity: sha512-WuWE1nyTNAyW5T7oNyys2EN0cfP2fdRxhxnIQWiAp0bMabPdHhoGxM8A6YL2GhqwgrPnnaemVE7nv5XJ2Fhh2w==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       webpack: '>=4.0.0 <6.0.0'
     dependencies:
       del: 4.1.1
-      webpack: 5.88.0
+      webpack: 5.88.1
     dev: false
 
   /clear-any-console@1.16.2:
@@ -6193,17 +6193,17 @@ packages:
       react-i18next: 13.0.1(i18next@23.2.3)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
-  /next-pwa@5.6.0(@babel/core@7.22.5)(next@13.4.7)(webpack@5.88.0):
+  /next-pwa@5.6.0(@babel/core@7.22.5)(next@13.4.7)(webpack@5.88.1):
     resolution: {integrity: sha512-XV8g8C6B7UmViXU8askMEYhWwQ4qc/XqJGnexbLV68hzKaGHZDMtHsm2TNxFcbR7+ypVuth/wwpiIlMwpRJJ5A==}
     peerDependencies:
       next: '>=9.0.0'
     dependencies:
-      babel-loader: 8.3.0(@babel/core@7.22.5)(webpack@5.88.0)
-      clean-webpack-plugin: 4.0.0(webpack@5.88.0)
+      babel-loader: 8.3.0(@babel/core@7.22.5)(webpack@5.88.1)
+      clean-webpack-plugin: 4.0.0(webpack@5.88.1)
       globby: 11.1.0
       next: 13.4.7(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.63.6)
-      terser-webpack-plugin: 5.3.9(webpack@5.88.0)
-      workbox-webpack-plugin: 6.6.0(webpack@5.88.0)
+      terser-webpack-plugin: 5.3.9(webpack@5.88.1)
+      workbox-webpack-plugin: 6.6.0(webpack@5.88.1)
       workbox-window: 6.6.0
     transitivePeerDependencies:
       - '@babel/core'
@@ -7750,7 +7750,7 @@ packages:
       unique-string: 2.0.0
     dev: false
 
-  /terser-webpack-plugin@5.3.9(webpack@5.88.0):
+  /terser-webpack-plugin@5.3.9(webpack@5.88.1):
     resolution: {integrity: sha512-ZuXsqE07EcggTWQjXUj+Aot/OMcD0bMKGgF63f7UxYcu5/AJF53aIpK1YoP5xR9l6s/Hy2b+t1AM0bLNPRuhwA==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -7771,7 +7771,7 @@ packages:
       schema-utils: 3.3.0
       serialize-javascript: 6.0.1
       terser: 5.18.1
-      webpack: 5.88.0
+      webpack: 5.88.1
 
   /terser@5.18.1:
     resolution: {integrity: sha512-j1n0Ao919h/Ai5r43VAnfV/7azUYW43GPxK7qSATzrsERfW7+y2QW9Cp9ufnRF5CQUWbnLSo7UJokSWCqg4tsQ==}
@@ -8068,8 +8068,8 @@ packages:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
 
-  /webpack@5.88.0:
-    resolution: {integrity: sha512-O3jDhG5e44qIBSi/P6KpcCcH7HD+nYIHVBhdWFxcLOcIGN8zGo5nqF3BjyNCxIh4p1vFdNnreZv2h2KkoAw3lw==}
+  /webpack@5.88.1:
+    resolution: {integrity: sha512-FROX3TxQnC/ox4N+3xQoWZzvGXSuscxR32rbzjpXgEzWudJFEJBpdlkkob2ylrv5yzzufD1zph1OoFsLtm6stQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -8099,7 +8099,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.9(webpack@5.88.0)
+      terser-webpack-plugin: 5.3.9(webpack@5.88.1)
       watchpack: 2.4.0
       webpack-sources: 3.2.3
     transitivePeerDependencies:
@@ -8295,7 +8295,7 @@ packages:
     resolution: {integrity: sha512-R2IkwDokbtHUE4Kus8pKO5+VkPHD2oqTgl+XJwh4zbF1HyjAbgNmK/FneZHVU7p03XUt9ICfuGDYISWG9qV/CQ==}
     dev: false
 
-  /workbox-webpack-plugin@6.6.0(webpack@5.88.0):
+  /workbox-webpack-plugin@6.6.0(webpack@5.88.1):
     resolution: {integrity: sha512-xNZIZHalboZU66Wa7x1YkjIqEy1gTR+zPM+kjrYJzqN7iurYZBctBLISyScjhkJKYuRrZUP0iqViZTh8rS0+3A==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -8304,7 +8304,7 @@ packages:
       fast-json-stable-stringify: 2.1.0
       pretty-bytes: 5.6.0
       upath: 1.2.0
-      webpack: 5.88.0
+      webpack: 5.88.1
       webpack-sources: 1.4.3
       workbox-build: 6.6.0
     transitivePeerDependencies:
