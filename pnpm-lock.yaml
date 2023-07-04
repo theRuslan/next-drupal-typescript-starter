@@ -110,8 +110,8 @@ devDependencies:
     specifier: ^13.4.7
     version: 13.4.7
   '@next/env':
-    specifier: ^13.4.7
-    version: 13.4.7
+    specifier: ^13.4.8
+    version: 13.4.8
   '@next/eslint-plugin-next':
     specifier: ^13.4.7
     version: 13.4.7
@@ -186,7 +186,7 @@ devDependencies:
     version: 10.0.0(eslint@8.43.0)
   next-sitemap:
     specifier: ^4.1.3
-    version: 4.1.3(@next/env@13.4.7)(next@13.4.7)
+    version: 4.1.3(@next/env@13.4.8)(next@13.4.7)
   postcss:
     specifier: ^8.4.24
     version: 8.4.24
@@ -2977,6 +2977,10 @@ packages:
 
   /@next/env@13.4.7:
     resolution: {integrity: sha512-ZlbiFulnwiFsW9UV1ku1OvX/oyIPLtMk9p/nnvDSwI0s7vSoZdRtxXNsaO+ZXrLv/pMbXVGq4lL8TbY9iuGmVw==}
+
+  /@next/env@13.4.8:
+    resolution: {integrity: sha512-twuSf1klb3k9wXI7IZhbZGtFCWvGD4wXTY2rmvzIgVhXhs7ISThrbNyutBx3jWIL8Y/Hk9+woytFz5QsgtcRKQ==}
+    dev: true
 
   /@next/eslint-plugin-next@13.4.7:
     resolution: {integrity: sha512-ANEPltxzXbyyG7CvqxdY4PmeM5+RyWdAJGufTHnU+LA/i3J6IDV2r8Z4onKwskwKEhwqzz5lMaSYGGXLyHX+mg==}
@@ -6227,7 +6231,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /next-sitemap@4.1.3(@next/env@13.4.7)(next@13.4.7):
+  /next-sitemap@4.1.3(@next/env@13.4.8)(next@13.4.7):
     resolution: {integrity: sha512-eCvbXMCqbD/rYx912y4FzGOqPCbWOIBL4UkgVY5R15eCXygKFKWzEVZGPNVBDu2KVpRCeG943NibOchfyQGDhQ==}
     engines: {node: '>=14.18'}
     hasBin: true
@@ -6236,7 +6240,7 @@ packages:
       next: '*'
     dependencies:
       '@corex/deepmerge': 4.0.43
-      '@next/env': 13.4.7
+      '@next/env': 13.4.8
       fast-glob: 3.2.12
       minimist: 1.2.8
       next: 13.4.7(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.63.6)
