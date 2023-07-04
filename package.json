@@ -54,7 +54,7 @@
     "@babel/core": "^7.22.5",
     "@chakra-ui/cli": "^2.4.1",
     "@chakra-ui/system": "^2.5.8",
-    "@next/bundle-analyzer": "^13.4.7",
+    "@next/bundle-analyzer": "^13.4.8",
     "@next/env": "^13.4.7",
     "@next/eslint-plugin-next": "^13.4.7",
     "@types/html-to-text": "^9.0.1",
