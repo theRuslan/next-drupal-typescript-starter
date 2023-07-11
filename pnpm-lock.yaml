@@ -46,7 +46,7 @@ dependencies:
     version: 1.6.0(@babel/core@7.22.5)(sass@1.63.6)
   next-i18next:
     specifier: ^14.0.0
-    version: 14.0.0(i18next@23.2.3)(next@13.4.7)(react-i18next@13.0.1)(react@18.2.0)
+    version: 14.0.0(i18next@23.2.3)(next@13.4.7)(react-i18next@13.0.2)(react@18.2.0)
   next-pwa:
     specifier: ^5.6.0
     version: 5.6.0(@babel/core@7.22.5)(next@13.4.7)(webpack@5.88.0)
@@ -75,8 +75,8 @@ dependencies:
     specifier: ^2.0.11
     version: 2.0.11
   react-i18next:
-    specifier: ^13.0.1
-    version: 13.0.1(i18next@23.2.3)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^13.0.2
+    version: 13.0.2(i18next@23.2.3)(react-dom@18.2.0)(react@18.2.0)
   react-merge-refs:
     specifier: ^2.0.2
     version: 2.0.2
@@ -6173,7 +6173,7 @@ packages:
       - sass
     dev: false
 
-  /next-i18next@14.0.0(i18next@23.2.3)(next@13.4.7)(react-i18next@13.0.1)(react@18.2.0):
+  /next-i18next@14.0.0(i18next@23.2.3)(next@13.4.7)(react-i18next@13.0.2)(react@18.2.0):
     resolution: {integrity: sha512-umv8hOZoSoAA+td3ErfemyO/5Ib2pnYCdQ8/Oy+fncS2skFIL3hHKRer3Oa3Nfm4Xbv5p6DHWzm3NhT1j4tWwg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6190,7 +6190,7 @@ packages:
       i18next-fs-backend: 2.1.5
       next: 13.4.7(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.63.6)
       react: 18.2.0
-      react-i18next: 13.0.1(i18next@23.2.3)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 13.0.2(i18next@23.2.3)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /next-pwa@5.6.0(@babel/core@7.22.5)(next@13.4.7)(webpack@5.88.0):
@@ -6816,8 +6816,8 @@ packages:
     resolution: {integrity: sha512-8gyj4TTxeP7eEyc2QKawEuQoAZdjKvMY4pgWfycGmqGByhs17fR+zEBs0JUDq4US/l+vbTl+6zvUIx27iDo/Vw==}
     dev: false
 
-  /react-i18next@13.0.1(i18next@23.2.3)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-gMO6N2GfSfuH7xlHSsZ/mZf+Py9bLm/+EDKIn5fNTuDTjcCcwmMU5UEuGCDk5mdfivbo7ySyYXBN7B9tbGUxiA==}
+  /react-i18next@13.0.2(i18next@23.2.3)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-NEVxC32v0oR4egwYM0QM0WE93AiJG5r0NTXTL8mhQfAhsMfDS2fSO6jpluyfsfypP988KzUQrAXncspcJ7+GHA==}
     peerDependencies:
       i18next: '>= 23.2.3'
       react: '>= 16.8.0'
