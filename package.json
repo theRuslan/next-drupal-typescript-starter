@@ -47,7 +47,7 @@
     "react-photoswipe-gallery": "^2.2.7",
     "react-youtube": "^10.1.0",
     "safe-json-stringify": "^1.2.0",
-    "sharp": "^0.32.1",
+    "sharp": "^0.32.2",
     "simplebar-react": "^3.2.4"
   },
   "devDependencies": {
