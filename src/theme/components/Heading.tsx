@@ -1,8 +1,8 @@
-const Link = {
+const Heading = {
   // baseStyle: {},
   // sizes: {},
   // variants: {},
   // defaultProps: {},
-};
+}
 
-export default Link;
+export default Heading

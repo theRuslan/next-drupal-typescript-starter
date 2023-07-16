@@ -1,8 +1,8 @@
-const Button = {
+const Link = {
   // baseStyle: {},
   // sizes: {},
   // variants: {},
   // defaultProps: {},
-};
+}
 
-export default Button;
+export default Link

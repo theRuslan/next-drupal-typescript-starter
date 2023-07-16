@@ -1,8 +1,8 @@
-const Heading = {
+const Button = {
   // baseStyle: {},
   // sizes: {},
   // variants: {},
   // defaultProps: {},
-};
+}
 
-export default Heading;
+export default Button
