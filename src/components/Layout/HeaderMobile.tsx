@@ -10,7 +10,7 @@ import LogoBox from "@/components/Logos/LogoBox"
 const Wrapper = dynamic(() => import("@/components/Layout/Wrapper"))
 const Container = dynamic(() => import("@/components/Layout/Container"))
 const IconClose = dynamic(() => import("@/icons/IconClose"))
-const IconMenu = dynamic(() => import("@/components/Icons/IconMenu"))
+const IconMenu = dynamic(() => import("@/icons/IconMenu"))
 
 const LanguageSwitcher = dynamic(
   () => import("@/components/Layout/LanguageSwitcher")

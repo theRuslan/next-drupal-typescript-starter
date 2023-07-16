@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -19,7 +19,7 @@
     "jsx": "preserve",
     "incremental": true,
     "preserveConstEnums": true,
-    "removeComments": false,
+    "removeComments": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
@@ -37,35 +37,44 @@
       }
     ],
     "paths": {
+      "@/*": [
+        "src/*"
+      ],
       "@/components/*": [
-        "components/*"
+        "src/components/*"
       ],
       "@/icons/*": [
-        "components/Icons/*"
+        "src/icons/*"
+      ],
+      "@/assets/*": [
+        "assets/*"
       ],
       "@/images/*": [
         "assets/images/*"
       ],
       "@/lib/*": [
-        "lib/*"
+        "src/lib/*"
       ],
       "@/helpers/*": [
-        "helpers/*"
+        "src/helpers/*"
       ],
       "@/hooks/*": [
-        "hooks/*"
+        "src/hooks/*"
       ],
       "@/theme/*": [
-        "theme/*"
+        "src/theme/*"
       ],
       "@/styles/*": [
-        "assets/styles/*"
+        "src/styles/*"
       ],
       "@/validations/*": [
-        "validations/*"
+        "src/validations/*"
       ],
       "@/types/*": [
-        "types/*"
+        "src/types/*"
+      ],
+      "@/modules/*": [
+        "node_modules/*"
       ]
     },
     "allowSyntheticDefaultImports": true,
@@ -78,7 +87,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src",
+    "styled-system"
   ],
   "exclude": [
     "node_modules"
