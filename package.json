@@ -25,8 +25,8 @@
     "gen:favicon-update": "real-favicon check-for-update --fail-on-update faviconData.json"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.0.19",
-    "@chakra-ui/react": "^2.7.1",
+    "@chakra-ui/icons": "^2.1.0",
+    "@chakra-ui/react": "^2.8.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/manrope": "^5.0.5",
@@ -63,7 +63,7 @@
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@chakra-ui/cli": "^2.4.1",
-    "@chakra-ui/system": "^2.5.8",
+    "@chakra-ui/system": "^2.6.0",
     "@next/bundle-analyzer": "^13.4.10",
     "@next/env": "^13.4.10",
     "@next/eslint-plugin-next": "^13.4.10",
@@ -94,7 +94,7 @@
     "postcss": "^8.4.26",
     "prettier": "^3.0.0",
     "sass": "^1.63.6",
-    "stylelint": "^15.10.1",
+    "stylelint": "^15.10.2",
     "stylelint-config-standard": "^34.0.0",
     "stylelint-config-standard-scss": "^10.0.0",
     "stylelint-prettier": "^4.0.0",
