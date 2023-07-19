@@ -3,6 +3,7 @@ import { extendTheme } from "@chakra-ui/react"
 import Button from "@/theme/components/Button"
 import Heading from "@/theme/components/Heading"
 import Link from "@/theme/components/Link"
+import { manrope } from "@/theme/fonts"
 
 const theme = extendTheme({
   colors: {
@@ -56,9 +57,9 @@ const theme = extendTheme({
   },
 
   fonts: {
-    heading: "Manrope, Arial Black, sans-serif",
-    body: "Manrope, Arial, sans-serif",
-    manrope: "Manrope, Arial, sans-serif",
+    heading: manrope.style.fontFamily,
+    body: manrope.style.fontFamily,
+    manrope: manrope.style.fontFamily,
 
     weight: {
       extralight: 200,

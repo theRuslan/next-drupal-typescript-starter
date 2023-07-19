@@ -1,10 +1,3 @@
-import "@fontsource/manrope/200.css" // Extra Light
-import "@fontsource/manrope/300.css" // Light
-import "@fontsource/manrope/400.css" // Normal
-import "@fontsource/manrope/500.css" // Medium
-import "@fontsource/manrope/600.css" // Semi bold
-import "@fontsource/manrope/700.css" // Bold
-import "@fontsource/manrope/800.css" // Extra Bold
 import "@/styles/nprogress.css"
 
 import { ChakraBaseProvider } from "@chakra-ui/react"
@@ -18,7 +11,7 @@ import { useEffect } from "react"
 import TagManager from "react-gtm-module"
 
 import { ContentTranslationsContextProvider } from "@/hooks/useContentTranslationsContext"
-// import Fonts from "@/theme/fonts"; // custom self-hosted fonts loading
+import { manrope } from "@/theme/fonts"
 import theme from "@/theme/theme"
 
 const Layout = dynamic(() => import("@/components/Layout/Layout"))
@@ -184,16 +177,15 @@ const App = ({ Component, pageProps }: AppProps) => {
         ]}
       />
 
-      {/* <Fonts /> */}
-
       <ChakraBaseProvider resetCSS theme={theme}>
         <ContentTranslationsContextProvider>
-          <Layout {...pageProps}>
-            <Component {...pageProps} />
-          </Layout>
+          <div className={manrope.className}>
+            <Layout {...pageProps}>
+              <Component {...pageProps} />
+            </Layout>
+            <BPIndicator />
+          </div>
         </ContentTranslationsContextProvider>
-
-        <BPIndicator />
       </ChakraBaseProvider>
     </>
   )
