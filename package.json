@@ -62,7 +62,7 @@
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@chakra-ui/cli": "^2.4.1",
-    "@next/bundle-analyzer": "^13.4.10",
+    "@next/bundle-analyzer": "^13.4.11",
     "@types/html-to-text": "^9.0.1",
     "@types/node": "^20.4.2",
     "@types/nprogress": "^0.2.0",
