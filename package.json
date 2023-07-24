@@ -87,7 +87,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "next-sitemap": "^4.1.8",
-    "postcss": "^8.4.26",
+    "postcss": "^8.4.27",
     "prettier": "^3.0.0",
     "sass": "^1.63.6",
     "stylelint": "^15.10.2",
