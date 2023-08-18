@@ -60,7 +60,7 @@
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.4.1",
-    "@next/bundle-analyzer": "^13.4.12",
+    "@next/bundle-analyzer": "^13.4.18",
     "@types/html-to-text": "^9.0.1",
     "@types/node": "^20.4.8",
     "@types/nprogress": "^0.2.0",

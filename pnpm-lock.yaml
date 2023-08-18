@@ -107,8 +107,8 @@ devDependencies:
     specifier: ^2.4.1
     version: 2.4.1
   '@next/bundle-analyzer':
-    specifier: ^13.4.12
-    version: 13.4.12
+    specifier: ^13.4.18
+    version: 13.4.18
   '@types/html-to-text':
     specifier: ^9.0.1
     version: 9.0.1
@@ -2944,8 +2944,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
-  /@next/bundle-analyzer@13.4.12:
-    resolution: {integrity: sha512-WjeNsoWGAkbn7XU2jBVkaI7/DVfg2mzRF7spTohsknnwQ/dDgSHlgZj80mt1/SHYconWjZSY0KIWFaxR4/mNsA==}
+  /@next/bundle-analyzer@13.4.18:
+    resolution: {integrity: sha512-5tSSaq1Id1G4TjhUvU/r+4dVRRZFvwKVxSY9K1aLjsg46XxC4l/cN+m9iMHPw9VjNAq8ENx0QO4ElP6wVC8q4w==}
     dependencies:
       webpack-bundle-analyzer: 4.7.0
     transitivePeerDependencies:
