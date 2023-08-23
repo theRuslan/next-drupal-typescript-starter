@@ -36,7 +36,7 @@
     "get-video-id": "^3.6.5",
     "html-react-parser": "^4.2.1",
     "html-to-text": "^9.0.5",
-    "i18next": "^23.4.4",
+    "i18next": "^23.4.5",
     "next": "^13.4.19",
     "next-drupal": "^1.6.0",
     "next-i18next": "^14.0.0",
