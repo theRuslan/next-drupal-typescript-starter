@@ -64,7 +64,7 @@
     "@types/html-to-text": "^9.0.1",
     "@types/node": "^20.6.0",
     "@types/nprogress": "^0.2.0",
-    "@types/react": "^18.2.21",
+    "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
     "@types/react-gtm-module": "^2.0.1",
     "@types/safe-json-stringify": "^1.1.2",
