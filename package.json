@@ -37,7 +37,7 @@
     "html-react-parser": "^4.2.2",
     "html-to-text": "^9.0.5",
     "i18next": "^23.5.1",
-    "next": "^13.4.19",
+    "next": "^13.5.2",
     "next-drupal": "^1.6.0",
     "next-i18next": "^14.0.3",
     "next-pwa": "^5.6.0",
