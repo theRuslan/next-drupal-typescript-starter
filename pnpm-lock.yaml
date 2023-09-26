@@ -128,8 +128,8 @@ devDependencies:
     specifier: ^2.0.1
     version: 2.0.1
   '@types/safe-json-stringify':
-    specifier: ^1.1.2
-    version: 1.1.2
+    specifier: ^1.1.3
+    version: 1.1.3
   '@types/youtube-player':
     specifier: ^5.5.7
     version: 5.5.7
@@ -3260,8 +3260,8 @@ packages:
       '@types/node': 20.6.0
     dev: false
 
-  /@types/safe-json-stringify@1.1.2:
-    resolution: {integrity: sha512-Hj/LZMBXFH3Qj9sNmNu6syBpkZqBaM00HgP7naf9CnZhB3kdxmrenWUD2cY6vvTWjuBM3NPOLknPKDUOQuTWXA==}
+  /@types/safe-json-stringify@1.1.3:
+    resolution: {integrity: sha512-6D1NT0NuNvkOtf7rVmzjycddwiM5ipilWQrHV8ZcNwhQxDzdN3ekK8qElxqT/RmyiNQyOny6LqlJzdgTzAemkQ==}
     dev: true
 
   /@types/scheduler@0.16.3:
