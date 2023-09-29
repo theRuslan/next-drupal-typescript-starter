@@ -24,8 +24,8 @@ dependencies:
     specifier: ^1.5.0
     version: 1.5.0
   drupal-jsonapi-params:
-    specifier: ^2.2.0
-    version: 2.2.0
+    specifier: ^2.3.1
+    version: 2.3.1
   framer-motion:
     specifier: ^10.16.4
     version: 10.16.4(react-dom@18.2.0)(react@18.2.0)
@@ -4519,8 +4519,8 @@ packages:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  /drupal-jsonapi-params@2.2.0:
-    resolution: {integrity: sha512-0IQiKBogl3ZR+XNO7ZTEd3TJaMfUlyUEJ1eotBXmmYs/JRVk8oADNZayULbnySnxfp9A9JHNI3TYwVYiHE0HrQ==}
+  /drupal-jsonapi-params@2.3.1:
+    resolution: {integrity: sha512-Isx6dudrFhORCl87OWHHO2LpQIAha5d6n7+/fwngsgcQs4PYeZcmTAA3pKUmvfyyFgCJ0N4fLAJQHyf4jtgiDA==}
     dependencies:
       qs: 6.11.2
     dev: false
