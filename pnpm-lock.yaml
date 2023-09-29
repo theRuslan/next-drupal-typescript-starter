@@ -81,8 +81,8 @@ dependencies:
     specifier: ^9.5.2
     version: 9.5.2(react@18.2.0)
   react-merge-refs:
-    specifier: ^2.0.2
-    version: 2.0.2
+    specifier: ^2.1.1
+    version: 2.1.1
   react-photoswipe-gallery:
     specifier: ^2.2.7
     version: 2.2.7(photoswipe@5.4.0)(prop-types@15.8.1)(react@18.2.0)
@@ -7059,8 +7059,8 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-merge-refs@2.0.2:
-    resolution: {integrity: sha512-V5BGTwGa2r+/t0A/BZMS6L7VPXY0CU8xtAhkT3XUoI1WJJhhtvulvoiZkJ5Jt9YAW23m4xFWmhQ+C5HwjtTFhQ==}
+  /react-merge-refs@2.1.1:
+    resolution: {integrity: sha512-jLQXJ/URln51zskhgppGJ2ub7b2WFKGq3cl3NYKtlHoTG+dN2q7EzWrn3hN3EgPsTMvpR9tpq5ijdp7YwFZkag==}
     dev: false
 
   /react-photoswipe-gallery@2.2.7(photoswipe@5.4.0)(prop-types@15.8.1)(react@18.2.0):
