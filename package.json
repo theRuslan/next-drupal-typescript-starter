@@ -34,7 +34,7 @@
     "drupal-jsonapi-params": "^2.3.1",
     "framer-motion": "^10.16.4",
     "get-video-id": "^3.6.5",
-    "html-react-parser": "^4.2.5",
+    "html-react-parser": "^5.0.4",
     "html-to-text": "^9.0.5",
     "i18next": "^23.5.1",
     "next": "^13.5.5",
