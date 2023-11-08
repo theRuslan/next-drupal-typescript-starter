@@ -131,8 +131,8 @@ devDependencies:
     specifier: ^1.1.3
     version: 1.1.3
   '@types/youtube-player':
-    specifier: ^5.5.8
-    version: 5.5.8
+    specifier: ^5.5.10
+    version: 5.5.10
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.8.0
     version: 6.8.0(@typescript-eslint/parser@6.8.0)(eslint@8.51.0)(typescript@5.2.2)
@@ -3285,8 +3285,8 @@ packages:
     resolution: {integrity: sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==}
     dev: false
 
-  /@types/youtube-player@5.5.8:
-    resolution: {integrity: sha512-WU6l9UyIp1TKEK3xN8K5Y1nZpP4FTnrz4ArAPjQknReNNkN9UeLbmAuFu2F69YthLkLkOAMWi9O3a6kJCIWH5g==}
+  /@types/youtube-player@5.5.10:
+    resolution: {integrity: sha512-A45rtI9nc4k/a1xdrSxE4tYO9MbGJg4esuCrTXNaB3v/ZqpeBQrD1OQwmKwZA9TMdg8VR8DPJY37pFOEBSuWIg==}
     dev: true
 
   /@typescript-eslint/eslint-plugin@6.8.0(@typescript-eslint/parser@6.8.0)(eslint@8.51.0)(typescript@5.2.2):
