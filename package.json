@@ -55,7 +55,7 @@
     "react-redux": "^8.1.3",
     "react-youtube": "^10.1.0",
     "safe-json-stringify": "^1.2.0",
-    "sharp": "^0.32.6",
+    "sharp": "^0.33.0",
     "simplebar-react": "^3.2.4"
   },
   "devDependencies": {
