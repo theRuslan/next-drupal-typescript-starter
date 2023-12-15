@@ -39,8 +39,8 @@ dependencies:
     specifier: ^9.0.5
     version: 9.0.5
   i18next:
-    specifier: ^23.5.1
-    version: 23.5.1
+    specifier: ^23.7.11
+    version: 23.7.11
   next:
     specifier: ^13.5.5
     version: 13.5.5(@babel/core@7.23.0)(react-dom@18.2.0)(react@18.2.0)
@@ -49,7 +49,7 @@ dependencies:
     version: 1.6.0(@babel/core@7.23.0)
   next-i18next:
     specifier: ^14.0.3
-    version: 14.0.3(i18next@23.5.1)(next@13.5.5)(react-i18next@13.3.0)(react@18.2.0)
+    version: 14.0.3(i18next@23.7.11)(next@13.5.5)(react-i18next@13.3.0)(react@18.2.0)
   next-pwa:
     specifier: ^5.6.0
     version: 5.6.0(@babel/core@7.23.0)(next@13.5.5)(webpack@5.88.2)
@@ -76,7 +76,7 @@ dependencies:
     version: 2.0.11
   react-i18next:
     specifier: ^13.3.0
-    version: 13.3.0(i18next@23.5.1)(react-dom@18.2.0)(react@18.2.0)
+    version: 13.3.0(i18next@23.7.11)(react-dom@18.2.0)(react@18.2.0)
   react-intersection-observer:
     specifier: ^9.5.2
     version: 9.5.2(react@18.2.0)
@@ -1327,6 +1327,13 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.0
+
+  /@babel/runtime@7.23.6:
+    resolution: {integrity: sha512-zHd0eUrf5GZoOWVCXp6koAKQTfZV07eit6bGPmJgnZdnSAvvZee6zniW2XMF7Cmc4ISOOnPy3QaSiIJGJkVEDQ==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.0
+    dev: false
 
   /@babel/template@7.22.15:
     resolution: {integrity: sha512-QPErUVm4uyJa60rkI73qneDacvdvzxshT3kksGqlGWYdOTIUOwJ7RDUL8sGqslY1uXWSL6xMFKEXDS3ox2uF0w==}
@@ -5627,10 +5634,10 @@ packages:
     resolution: {integrity: sha512-VOPHhdDX0M/csRqEw+9Ectpf6wvTIg1MZDfAHxc3JKnAlJz7fcZSAKAeyDohOq0xuLx57esYpJopIvBaRb0Bag==}
     dev: false
 
-  /i18next@23.5.1:
-    resolution: {integrity: sha512-JelYzcaCoFDaa+Ysbfz2JsGAKkrHiMG6S61+HLBUEIPaF40WMwW9hCPymlQGrP+wWawKxKPuSuD71WZscCsWHg==}
+  /i18next@23.7.11:
+    resolution: {integrity: sha512-A/vOkw8vY99YHU9A1Td3I1dcTiYaPnwBWzrpVzfXUXSYgogK3cmBcmop/0cnXPc6QpUWIyqaugKNxRUEZVk9Nw==}
     dependencies:
-      '@babel/runtime': 7.23.1
+      '@babel/runtime': 7.23.6
     dev: false
 
   /idb@7.1.1:
@@ -6397,7 +6404,7 @@ packages:
       - sass
     dev: false
 
-  /next-i18next@14.0.3(i18next@23.5.1)(next@13.5.5)(react-i18next@13.3.0)(react@18.2.0):
+  /next-i18next@14.0.3(i18next@23.7.11)(next@13.5.5)(react-i18next@13.3.0)(react@18.2.0):
     resolution: {integrity: sha512-FtnjRMfhlamk8YyeyWqd+pndNL+3er83iMZnH4M4mhiGA93l0+vtBUvuObgOAMHDJGLLB2SS2xOOZq69oiJh7A==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6410,11 +6417,11 @@ packages:
       '@types/hoist-non-react-statics': 3.3.2
       core-js: 3.32.2
       hoist-non-react-statics: 3.3.2
-      i18next: 23.5.1
+      i18next: 23.7.11
       i18next-fs-backend: 2.2.0
       next: 13.5.5(@babel/core@7.23.0)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
-      react-i18next: 13.3.0(i18next@23.5.1)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 13.3.0(i18next@23.7.11)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /next-pwa@5.6.0(@babel/core@7.23.0)(next@13.5.5)(webpack@5.88.2):
@@ -7071,7 +7078,7 @@ packages:
     resolution: {integrity: sha512-8gyj4TTxeP7eEyc2QKawEuQoAZdjKvMY4pgWfycGmqGByhs17fR+zEBs0JUDq4US/l+vbTl+6zvUIx27iDo/Vw==}
     dev: false
 
-  /react-i18next@13.3.0(i18next@23.5.1)(react-dom@18.2.0)(react@18.2.0):
+  /react-i18next@13.3.0(i18next@23.7.11)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-FlR9xjYHSPIJfQspEmkN0yOlxgRyNuiJKJ8gCaZH08UJ7SZHG+VrptEPcpEMEchjNoCOZdKcvJ3PnmHEZhkeXg==}
     peerDependencies:
       i18next: '>= 23.2.3'
@@ -7086,7 +7093,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.1
       html-parse-stringify: 3.0.1
-      i18next: 23.5.1
+      i18next: 23.7.11
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
