@@ -9,7 +9,7 @@
     "port": "2000"
   },
   "engines": {
-    "node": "18.x"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "dev": "next dev -p $npm_package_config_port",
