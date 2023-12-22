@@ -32,7 +32,7 @@
     "@reduxjs/toolkit": "^1.9.7",
     "axios": "^1.6.0",
     "drupal-jsonapi-params": "^2.3.1",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^10.16.16",
     "get-video-id": "^3.6.5",
     "html-react-parser": "^4.2.5",
     "html-to-text": "^9.0.5",
