@@ -30,7 +30,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@reduxjs/toolkit": "^2.0.1",
-    "axios": "^1.6.2",
+    "axios": "^1.6.4",
     "drupal-jsonapi-params": "^2.3.1",
     "framer-motion": "^10.16.16",
     "get-video-id": "^3.6.5",
