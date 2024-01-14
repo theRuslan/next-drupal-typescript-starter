@@ -33,8 +33,8 @@ dependencies:
     specifier: ^3.6.5
     version: 3.6.5
   html-react-parser:
-    specifier: ^5.0.11
-    version: 5.0.11(react@18.2.0)
+    specifier: ^5.1.0
+    version: 5.1.0(react@18.2.0)
   html-to-text:
     specifier: ^9.0.5
     version: 9.0.5
@@ -5722,8 +5722,8 @@ packages:
       void-elements: 3.1.0
     dev: false
 
-  /html-react-parser@5.0.11(react@18.2.0):
-    resolution: {integrity: sha512-TcLGDGMbVRbos09zwnom/QrLbd4PmNFhMEhlp2ZdHBboAuCuctRDqr8JU5aTyKzFKotdpSg8QkXVxVb5ZUU2Ag==}
+  /html-react-parser@5.1.0(react@18.2.0):
+    resolution: {integrity: sha512-9BXtf81EFbi/YZDvDQkiwuPg4y8bXQrrWwrMvpIJxREXPv5HiLS0aQvtjY7YP3z2mYFD4urCWSl2ebSDdrrGwg==}
     peerDependencies:
       react: 0.14 || 15 || 16 || 17 || 18
     dependencies:
