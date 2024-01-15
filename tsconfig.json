@@ -13,7 +13,7 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -30,6 +30,11 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "noUncheckedIndexedAccess": true,
+    "verbatimModuleSyntax": true,
     "baseUrl": ".",
     "plugins": [
       {
@@ -38,56 +43,14 @@
     ],
     "paths": {
       "@/*": [
-        "src/*"
-      ],
-      "@/components/*": [
-        "src/components/*"
-      ],
-      "@/icons/*": [
-        "src/icons/*"
-      ],
-      "@/assets/*": [
-        "assets/*"
-      ],
-      "@/images/*": [
-        "assets/images/*"
-      ],
-      "@/lib/*": [
-        "src/lib/*"
-      ],
-      "@/helpers/*": [
-        "src/helpers/*"
-      ],
-      "@/hooks/*": [
-        "src/hooks/*"
-      ],
-      "@/theme/*": [
-        "src/theme/*"
-      ],
-      "@/styles/*": [
-        "src/styles/*"
-      ],
-      "@/validations/*": [
-        "src/validations/*"
-      ],
-      "@/types/*": [
-        "src/types/*"
-      ],
-      "@/modules/*": [
-        "node_modules/*"
+        "./src/*"
       ]
-    },
-    "allowSyntheticDefaultImports": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "noUncheckedIndexedAccess": true,
-    "verbatimModuleSyntax": true,
+    }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
     "src",
     "styled-system"
   ],
