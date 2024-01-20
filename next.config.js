@@ -5,26 +5,30 @@ const runtimeCaching = require("next-pwa/cache")
 const nextConfig = {
   reactStrictMode: true,
 
+  logging: {
+    fetches: {
+      fullUrl: true
+    }
+  },
+
   images: {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
         protocol: "https",
         hostname: process.env.NEXT_IMAGE_DOMAIN,
-        // port: "",
         pathname: "/sites/default/files/**"
       }
-    ],
-    domains: [process.env.NEXT_IMAGE_DOMAIN]
+    ]
   },
 
   i18n,
 
   compiler: {
     removeConsole: process.env.NODE_ENV !== "development"
-  },
+  }
 
-  output: "standalone"
+  // output: "standalone"
 }
 
 const withPWA = require("next-pwa")({
