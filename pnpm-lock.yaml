@@ -21,8 +21,8 @@ dependencies:
     specifier: ^2.1.0
     version: 2.1.0(react-redux@9.1.0)(react@18.2.0)
   axios:
-    specifier: ^1.6.5
-    version: 1.6.5
+    specifier: ^1.6.7
+    version: 1.6.7
   drupal-jsonapi-params:
     specifier: ^2.3.1
     version: 2.3.1
@@ -4104,8 +4104,8 @@ packages:
       - debug
     dev: true
 
-  /axios@1.6.5:
-    resolution: {integrity: sha512-Ii012v05KEVuUoFWmMW/UQv9aRIc3ZwkWDcM+h5Il8izZCtRVpDUfwpoFf7eOtajT3QiGR4yDUx7lPqHJULgbg==}
+  /axios@1.6.7:
+    resolution: {integrity: sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==}
     dependencies:
       follow-redirects: 1.15.5
       form-data: 4.0.0
