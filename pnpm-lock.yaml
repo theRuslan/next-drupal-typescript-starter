@@ -63,8 +63,8 @@ dependencies:
     specifier: ^5.4.3
     version: 5.4.3
   polished:
-    specifier: ^4.2.2
-    version: 4.2.2
+    specifier: ^4.3.0
+    version: 4.3.0
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -1359,6 +1359,13 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.1
+
+  /@babel/runtime@7.23.9:
+    resolution: {integrity: sha512-0CX6F+BI2s9dkUqr08KFrAIZgNFj75rdBU/DjCyYLIaV/quFjkk6T+EJ2LkZHyZTbEV4L5p97mNkUsHl2wLFAw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.1
+    dev: false
 
   /@babel/template@7.22.15:
     resolution: {integrity: sha512-QPErUVm4uyJa60rkI73qneDacvdvzxshT3kksGqlGWYdOTIUOwJ7RDUL8sGqslY1uXWSL6xMFKEXDS3ox2uF0w==}
@@ -6920,11 +6927,11 @@ packages:
       find-up: 6.3.0
     dev: true
 
-  /polished@4.2.2:
-    resolution: {integrity: sha512-Sz2Lkdxz6F2Pgnpi9U5Ng/WdWAUZxmHrNPoVlm3aAemxoy2Qy7LGjQg4uf8qKelDAUW94F4np3iH2YPf2qefcQ==}
-    engines: {node: '>=10'}
+  /polished@4.3.0:
+    resolution: {integrity: sha512-ggU2H9FdSRwmcfGEPFaUNoX+P6cVbmIhobEpVBCiclCm6Ku+vlzh7wmhBRplYUqsECt8ZHwM8CaVjLBzLMJB1g==}
+    engines: {node: '>=20'}
     dependencies:
-      '@babel/runtime': 7.23.8
+      '@babel/runtime': 7.23.9
     dev: false
 
   /postcss-media-query-parser@0.2.3:
