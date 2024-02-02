@@ -63,8 +63,8 @@ dependencies:
     specifier: ^5.4.3
     version: 5.4.3
   polished:
-    specifier: ^4.2.2
-    version: 4.2.2
+    specifier: ^4.3.1
+    version: 4.3.1
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -6920,8 +6920,8 @@ packages:
       find-up: 6.3.0
     dev: true
 
-  /polished@4.2.2:
-    resolution: {integrity: sha512-Sz2Lkdxz6F2Pgnpi9U5Ng/WdWAUZxmHrNPoVlm3aAemxoy2Qy7LGjQg4uf8qKelDAUW94F4np3iH2YPf2qefcQ==}
+  /polished@4.3.1:
+    resolution: {integrity: sha512-OBatVyC/N7SCW/FaDHrSd+vn0o5cS855TOmYi4OkdWUMSJCET/xip//ch8xGUvtr3i44X9LVyWwQlRMTN3pwSA==}
     engines: {node: '>=10'}
     dependencies:
       '@babel/runtime': 7.23.8
