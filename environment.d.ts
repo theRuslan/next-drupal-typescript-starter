@@ -1,7 +1,6 @@
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
-      NODE_ENV: "development" | "production" | "test"
       NEXT_PUBLIC_SITE_URL: string
       NEXT_PUBLIC_GTM_ID: string
       NEXT_PUBLIC_DRUPAL_BASE_URL: string
