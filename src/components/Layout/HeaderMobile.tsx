@@ -46,7 +46,8 @@ const HeaderMobile = () => {
 
   useEffect(() => {
     scrollY.onChange(() => {
-      const forwardScroll = scrollY.get() > scrollY.getPrevious()
+      const prev = scrollY.getPrevious() || 0
+      const forwardScroll = scrollY.get() > prev
       if (forwardScroll !== isForwardScroll) setIsForwardScroll(forwardScroll)
     })
   }, [isForwardScroll, scrollY])
