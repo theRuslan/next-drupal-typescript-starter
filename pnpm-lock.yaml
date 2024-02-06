@@ -78,8 +78,8 @@ dependencies:
     specifier: ^14.0.1
     version: 14.0.1(i18next@23.8.2)(react-dom@18.2.0)(react@18.2.0)
   react-intersection-observer:
-    specifier: ^9.6.0
-    version: 9.6.0(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^9.7.0
+    version: 9.7.0(react-dom@18.2.0)(react@18.2.0)
   react-merge-refs:
     specifier: ^2.1.1
     version: 2.1.1
@@ -7100,8 +7100,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /react-intersection-observer@9.6.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ZJCi6aOY4kIulpUhWRNIFTyMUKOmSA25iw8sKH07fhlqWTaWD5CWvWarqH4N31EyjCFKsgetvr/amRpnuEWzRg==}
+  /react-intersection-observer@9.7.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-euleEjBVaMRwSOMNVcMX5WGn74GfZ9I78nx9SUb5a0eXd0IhegjJcUliSO9Jd+xiaZ5rgFvbGoVln66lpMyUUg==}
     peerDependencies:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
