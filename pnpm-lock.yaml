@@ -30,8 +30,8 @@ dependencies:
     specifier: ^11.0.3
     version: 11.0.3(react-dom@18.2.0)(react@18.2.0)
   get-video-id:
-    specifier: ^3.6.5
-    version: 3.6.5
+    specifier: ^3.7.0
+    version: 3.7.0
   html-react-parser:
     specifier: ^5.1.1
     version: 5.1.1(react@18.2.0)
@@ -5534,8 +5534,8 @@ packages:
       resolve-pkg-maps: 1.0.0
     dev: true
 
-  /get-video-id@3.6.5:
-    resolution: {integrity: sha512-9RPHSQANIeGW5rU3CjWdm1zi+wUHbBWX+m4m+dqQAavrZ9p1P1J7AbxGvVEEHRyGfGrmMf5PqiRWYMyfqM+QYA==}
+  /get-video-id@3.7.0:
+    resolution: {integrity: sha512-hU5pnODTo87slfs9MUFO3vpJr23AESJHmF20T3ivqQJZ/Wz0W5TxjSrGoyB6X538Shyi6tCCpQSeBoV88F9NYA==}
     engines: {node: '>=10'}
     dev: false
 
