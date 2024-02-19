@@ -30,8 +30,8 @@ dependencies:
     specifier: ^11.0.5
     version: 11.0.5(react-dom@18.2.0)(react@18.2.0)
   get-video-id:
-    specifier: ^3.7.0
-    version: 3.7.0
+    specifier: ^4.0.0
+    version: 4.1.4
   html-react-parser:
     specifier: ^5.1.6
     version: 5.1.6(react@18.2.0)
@@ -5766,9 +5766,11 @@ packages:
       resolve-pkg-maps: 1.0.0
     dev: true
 
-  /get-video-id@3.7.0:
-    resolution: {integrity: sha512-hU5pnODTo87slfs9MUFO3vpJr23AESJHmF20T3ivqQJZ/Wz0W5TxjSrGoyB6X538Shyi6tCCpQSeBoV88F9NYA==}
-    engines: {node: '>=10'}
+  /get-video-id@4.1.4:
+    resolution: {integrity: sha512-OfzhGPIctTfR6RdQoro2IkmndIuVNsOvm1X0Oc6Ypkc1/f4EFKL4t3b8HuEHU1fK7vgZBoFmwypRlAY3hS/RqA==}
+    engines: {node: '>=16'}
+    dependencies:
+      '@babel/runtime': 7.23.9
     dev: false
 
   /glob-parent@5.1.2:
