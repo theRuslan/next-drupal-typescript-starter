@@ -117,7 +117,7 @@ devDependencies:
     version: 9.0.4
   '@types/node':
     specifier: ^20.11.20
-    version: 20.11.20
+    version: 20.11.21
   '@types/nprogress':
     specifier: ^0.2.3
     version: 0.2.3
@@ -3469,11 +3469,11 @@ packages:
   /@types/eslint-scope@3.7.7:
     resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
     dependencies:
-      '@types/eslint': 8.56.3
+      '@types/eslint': 8.56.4
       '@types/estree': 1.0.5
 
-  /@types/eslint@8.56.3:
-    resolution: {integrity: sha512-PvSf1wfv2wJpVIFUMSb+i4PvqNYkB9Rkp9ZDO3oaWzq4SKhsQk4mrMBr3ZH06I0hKrVGLBacmgl8JM4WVjb9dg==}
+  /@types/eslint@8.56.4:
+    resolution: {integrity: sha512-lG1GLUnL5vuRBGb3MgWUWLdGMH2Hps+pERuyQXCfWozuGKdnhf9Pbg4pkcrVUHjKrU7Rl+GCZ/299ObBXZFAxg==}
     dependencies:
       '@types/estree': 1.0.5
       '@types/json-schema': 7.0.15
@@ -3489,7 +3489,7 @@ packages:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.11.20
+      '@types/node': 20.11.21
     dev: false
 
   /@types/hoist-non-react-statics@3.3.5:
@@ -3530,8 +3530,8 @@ packages:
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
     dev: false
 
-  /@types/node@20.11.20:
-    resolution: {integrity: sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==}
+  /@types/node@20.11.21:
+    resolution: {integrity: sha512-/ySDLGscFPNasfqStUuWWPfL78jompfIoVzLJPVVAHBh6rpG68+pI2Gk+fNLeI8/f1yPYL4s46EleVIc20F1Ow==}
     dependencies:
       undici-types: 5.26.5
 
@@ -3566,7 +3566,7 @@ packages:
   /@types/resolve@1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 20.11.20
+      '@types/node': 20.11.21
     dev: false
 
   /@types/safe-json-stringify@1.1.5:
@@ -4868,6 +4868,14 @@ packages:
 
   /enhanced-resolve@5.15.0:
     resolution: {integrity: sha512-LXYT42KJ7lpIKECr2mAXIaMldcNCh/7E0KBKOu4KSfkHmP+mZmSs+8V5gBAqisWBy0OO4W5Oyys0GO1Y8KtdKg==}
+    engines: {node: '>=10.13.0'}
+    dependencies:
+      graceful-fs: 4.2.11
+      tapable: 2.2.1
+    dev: true
+
+  /enhanced-resolve@5.15.1:
+    resolution: {integrity: sha512-3d3JRbwsCLJsYgvb6NuWEG44jjPSOMuS73L/6+7BZuoKm3W+qXnSoIYVHi8dG7Qcg4inAY4jbzkZ7MnskePeDg==}
     engines: {node: '>=10.13.0'}
     dependencies:
       graceful-fs: 4.2.11
@@ -6303,7 +6311,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.11.20
+      '@types/node': 20.11.21
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: false
@@ -6312,7 +6320,7 @@ packages:
     resolution: {integrity: sha512-7vuh85V5cdDofPyxn58nrPjBktZo0u9x1g8WtjQol+jZDaE+fhN+cIvTj11GndBnMnyfrUOG1sZQxCdjKh+DKg==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 20.11.20
+      '@types/node': 20.11.21
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -8575,7 +8583,7 @@ packages:
       acorn-import-assertions: 1.9.0(acorn@8.11.3)
       browserslist: 4.23.0
       chrome-trace-event: 1.0.3
-      enhanced-resolve: 5.15.0
+      enhanced-resolve: 5.15.1
       es-module-lexer: 1.4.1
       eslint-scope: 5.1.1
       events: 3.3.0
