@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "dependencyDashboard": false,
-  "extends": ["config:base", ":semanticCommitTypeAll(chore)", "schedule:daily"],
+  "extends": ["config:base", ":semanticCommitTypeAll(chore)"],
   "rebaseWhen": "conflicted",
   "timezone": "UTC",
   "packageRules": [
