@@ -1,5 +1,5 @@
 name: Build
-concurrency: build_ci
+# concurrency: build_ci
 
 on:
   # push:
