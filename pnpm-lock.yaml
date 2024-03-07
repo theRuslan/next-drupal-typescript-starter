@@ -49,7 +49,7 @@ dependencies:
     version: 1.6.0(@babel/core@7.24.0)
   next-i18next:
     specifier: ^15.2.0
-    version: 15.2.0(i18next@23.10.0)(next@14.1.3)(react-i18next@14.0.8)(react@18.2.0)
+    version: 15.2.0(i18next@23.10.0)(next@14.1.3)(react-i18next@14.1.0)(react@18.2.0)
   next-pwa:
     specifier: ^5.6.0
     version: 5.6.0(@babel/core@7.24.0)(next@14.1.3)(webpack@5.90.3)
@@ -76,7 +76,7 @@ dependencies:
     version: 2.0.11
   react-i18next:
     specifier: ^14.0.5
-    version: 14.0.8(i18next@23.10.0)(react-dom@18.2.0)(react@18.2.0)
+    version: 14.1.0(i18next@23.10.0)(react-dom@18.2.0)(react@18.2.0)
   react-intersection-observer:
     specifier: ^9.8.1
     version: 9.8.1(react-dom@18.2.0)(react@18.2.0)
@@ -6847,7 +6847,7 @@ packages:
       - sass
     dev: false
 
-  /next-i18next@15.2.0(i18next@23.10.0)(next@14.1.3)(react-i18next@14.0.8)(react@18.2.0):
+  /next-i18next@15.2.0(i18next@23.10.0)(next@14.1.3)(react-i18next@14.1.0)(react@18.2.0):
     resolution: {integrity: sha512-Rl5yZ4oGffsB0AjRykZ5PzNQ2M6am54MaMayldGmH/UKZisrIxk2SKEPJvaHhKlWe1qgdNi2FkodwK8sEjfEmg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6864,7 +6864,7 @@ packages:
       i18next-fs-backend: 2.3.1
       next: 14.1.3(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
-      react-i18next: 14.0.8(i18next@23.10.0)(react-dom@18.2.0)(react@18.2.0)
+      react-i18next: 14.1.0(i18next@23.10.0)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
   /next-pwa@5.6.0(@babel/core@7.24.0)(next@14.1.3)(webpack@5.90.3):
@@ -7473,8 +7473,8 @@ packages:
     resolution: {integrity: sha512-8gyj4TTxeP7eEyc2QKawEuQoAZdjKvMY4pgWfycGmqGByhs17fR+zEBs0JUDq4US/l+vbTl+6zvUIx27iDo/Vw==}
     dev: false
 
-  /react-i18next@14.0.8(i18next@23.10.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-1HKM41/Q8c/nQ2rYNNZlFmrjF2aubZT8sMBmY9aH/xa1/gsrTZ+hPwuLv4V7Cr8fYIh0GQ7vv5C1jCx104uNig==}
+  /react-i18next@14.1.0(i18next@23.10.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-3KwX6LHpbvGQ+sBEntjV4sYW3Zovjjl3fpoHbUwSgFHf0uRBcbeCBLR5al6ikncI5+W0EFb71QXZmfop+J6NrQ==}
     peerDependencies:
       i18next: '>= 23.2.3'
       react: '>= 16.8.0'
