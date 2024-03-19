@@ -34,7 +34,7 @@ dependencies:
     version: 4.1.5
   html-react-parser:
     specifier: ^5.1.7
-    version: 5.1.8(@types/react@18.2.67)(react@18.2.0)
+    version: 5.1.9(@types/react@18.2.67)(react@18.2.0)
   html-to-text:
     specifier: ^9.0.5
     version: 9.0.5
@@ -5204,8 +5204,8 @@ packages:
       safe-array-concat: 1.1.2
     dev: true
 
-  /es-module-lexer@1.4.1:
-    resolution: {integrity: sha512-cXLGjP0c4T3flZJKQSuziYoq7MlT+rnvfZjfp7h+I7K9BNX54kP9nyWvdbwjQ4u1iWbOL4u96fgeZLToQlZC7w==}
+  /es-module-lexer@1.4.2:
+    resolution: {integrity: sha512-7nOqkomXZEaxUDJw21XZNtRk739QvrPSoZoRtbsEfcii00vdzZUh6zh1CQwHhrib8MdEtJfv5rJiGeb4KuV/vw==}
 
   /es-set-tostringtag@2.0.3:
     resolution: {integrity: sha512-3T8uNMC3OQTHkFUsFq8r/BwAXLHvU/9O9mE0fBc/MY5iq/8H7ncvO947LmYA6ldWw9Uh8Yhf25zu6n7nML5QWQ==}
@@ -6193,8 +6193,8 @@ packages:
       void-elements: 3.1.0
     dev: false
 
-  /html-react-parser@5.1.8(@types/react@18.2.67)(react@18.2.0):
-    resolution: {integrity: sha512-oAXgUB4JYHFg4le3RQZtoge1TGMkwXSZPiWiexwdx3AuldgG+QEvbwMrscSViu90JNje3V4Zq5gCUSoTxa0W0A==}
+  /html-react-parser@5.1.9(@types/react@18.2.67)(react@18.2.0):
+    resolution: {integrity: sha512-MP0MQDEGlzkJT0OwY//tKYrgIzBM1frYLxx9RF7ALdIjI+MCMumydcNovXDX4X/iDi1zfgaU28VxoNXZn7EPjQ==}
     peerDependencies:
       '@types/react': 17 || 18
       react: 0.14 || 15 || 16 || 17 || 18
@@ -6207,7 +6207,7 @@ packages:
       html-dom-parser: 5.0.8
       react: 18.2.0
       react-property: 2.0.2
-      style-to-js: 1.1.10
+      style-to-js: 1.1.11
     dev: false
 
   /html-tags@3.3.1:
@@ -8276,8 +8276,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /style-to-js@1.1.10:
-    resolution: {integrity: sha512-VC7MBJa+y0RZhpnLKDPmVRLRswsASLmixkiZ5R8xZpNT9VyjeRzwnXd2pBzAWdgSGv/pCNNH01gPCCUsB9exYg==}
+  /style-to-js@1.1.11:
+    resolution: {integrity: sha512-yHpYzXzEkx7iDjGEmE8Eyl4K/hWIm36FXPdRsl2NHEpbigLeawLVsv6tcYp+2xNhfpCrut4w08dYqeCxWMdRxw==}
     dependencies:
       style-to-object: 1.0.5
     dev: false
@@ -8865,7 +8865,7 @@ packages:
       browserslist: 4.23.0
       chrome-trace-event: 1.0.3
       enhanced-resolve: 5.16.0
-      es-module-lexer: 1.4.1
+      es-module-lexer: 1.4.2
       eslint-scope: 5.1.1
       events: 3.3.0
       glob-to-regexp: 0.4.1
