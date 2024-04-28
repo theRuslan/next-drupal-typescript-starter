@@ -82,7 +82,7 @@ importers:
         version: 14.1.1(i18next@23.11.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-intersection-observer:
         specifier: ^9.8.1
-        version: 9.8.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-merge-refs:
         specifier: ^2.1.1
         version: 2.1.1
@@ -2737,8 +2737,8 @@ packages:
     resolution: {integrity: sha512-scxAJaewsahbqTYrGKJihhViaM6DDZDDoucfvzNbK0pOren1g/daDQ3IAhzn+1G14rBG7w+i5N+qul60++zlKA==}
     engines: {node: '>= 0.4'}
 
-  es-module-lexer@1.5.0:
-    resolution: {integrity: sha512-pqrTKmwEIgafsYZAGw9kszYzmagcE/n4dbgwGWLEXg7J4QFJVQRBld8j3Q3GNez79jzxZshq0bcT962QHOghjw==}
+  es-module-lexer@1.5.2:
+    resolution: {integrity: sha512-l60ETUTmLqbVbVHv1J4/qj+M8nq7AwMzEcg3kmJDt9dCNrTk+yHcYFf/Kw75pMDwd9mPcIGCG5LcS20SxYRzFA==}
 
   es-set-tostringtag@2.0.3:
     resolution: {integrity: sha512-3T8uNMC3OQTHkFUsFq8r/BwAXLHvU/9O9mE0fBc/MY5iq/8H7ncvO947LmYA6ldWw9Uh8Yhf25zu6n7nML5QWQ==}
@@ -4040,11 +4040,11 @@ packages:
       react-native:
         optional: true
 
-  react-intersection-observer@9.8.2:
-    resolution: {integrity: sha512-901naEiiZmse3p+AmtbQ3NL9xx+gQ8TXLiGDc+8GiE3JKJkNV3vP737aGuWTAXBA+1QqxPrDDE+fIEgYpGDlrQ==}
+  react-intersection-observer@9.10.0:
+    resolution: {integrity: sha512-PgdIX+RdFLl2WWtYn1p2IN86brHBE6NwzWm3hBxy1FoCl/isy7cMeq4HKjoRR4S2wRu7o3hzlJRi50/XAvVbaw==}
     peerDependencies:
-      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
+      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     peerDependenciesMeta:
       react-dom:
         optional: true
@@ -7851,7 +7851,7 @@ snapshots:
       iterator.prototype: 1.1.2
       safe-array-concat: 1.1.2
 
-  es-module-lexer@1.5.0: {}
+  es-module-lexer@1.5.2: {}
 
   es-set-tostringtag@2.0.3:
     dependencies:
@@ -9316,7 +9316,7 @@ snapshots:
     optionalDependencies:
       react-dom: 18.3.1(react@18.3.1)
 
-  react-intersection-observer@9.8.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-intersection-observer@9.10.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
     optionalDependencies:
@@ -10102,7 +10102,7 @@ snapshots:
       browserslist: 4.23.0
       chrome-trace-event: 1.0.3
       enhanced-resolve: 5.16.0
-      es-module-lexer: 1.5.0
+      es-module-lexer: 1.5.2
       eslint-scope: 5.1.1
       events: 3.3.0
       glob-to-regexp: 0.4.1
