@@ -103,7 +103,7 @@ importers:
         version: 0.33.3
       simplebar-react:
         specifier: ^3.2.4
-        version: 3.2.4(react@18.3.1)
+        version: 3.2.5(react@18.3.1)
       use-debounce:
         specifier: ^10.0.0
         version: 10.0.0(react@18.3.1)
@@ -1922,6 +1922,9 @@ packages:
 
   '@types/lodash@4.14.202':
     resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
+
+  '@types/lodash@4.17.1':
+    resolution: {integrity: sha512-X+2qazGS3jxLAIz5JDXDzglAF3KpijdhFxlf/V1+hEsOUc+HnWi81L/uv/EvGuV90WY+7mPGFCUDGfQC3Gj95Q==}
 
   '@types/minimatch@5.1.2':
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
@@ -4307,11 +4310,11 @@ packages:
   simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
 
-  simplebar-core@1.2.4:
-    resolution: {integrity: sha512-P+Sqshef4fq3++gQ82TgNYcgl3qZFSCP5jS2/8NMmw18oagXOijMzs1G+vm6RUY3oMvpwH3wGoqh9u6SyDjHfQ==}
+  simplebar-core@1.2.5:
+    resolution: {integrity: sha512-33AVCYXS8yavWId0GbE4TG1cYELsYybpCKWHJYuWEY/j6nccgz6zQdJ7nCqOpIGo7HgPPbkSSSIlJhi43fHP6A==}
 
-  simplebar-react@3.2.4:
-    resolution: {integrity: sha512-ogLN79e7JUm82wJChD7NSUB+4EHCFvDkjXpiu8hT1Alk7DnCekUWds61NXcsP9jC97KOgF5To/AVjYFbX0olgg==}
+  simplebar-react@3.2.5:
+    resolution: {integrity: sha512-ZstHCBF1Is2Lj+Un8NUYSHVCmn8ufi25ylP9UH2bDnASa+V+M+6/thGhUZOZ7YNpFFHTNgVIID3FHdwRqNuqZA==}
     peerDependencies:
       react: '>=16.8.0'
 
@@ -6822,13 +6825,15 @@ snapshots:
 
   '@types/lodash-es@4.17.12':
     dependencies:
-      '@types/lodash': 4.14.202
+      '@types/lodash': 4.17.1
 
   '@types/lodash.mergewith@4.6.7':
     dependencies:
       '@types/lodash': 4.14.202
 
   '@types/lodash@4.14.202': {}
+
+  '@types/lodash@4.17.1': {}
 
   '@types/minimatch@5.1.2': {}
 
@@ -9640,17 +9645,17 @@ snapshots:
     dependencies:
       is-arrayish: 0.3.2
 
-  simplebar-core@1.2.4:
+  simplebar-core@1.2.5:
     dependencies:
       '@types/lodash-es': 4.17.12
       can-use-dom: 0.1.0
       lodash: 4.17.21
       lodash-es: 4.17.21
 
-  simplebar-react@3.2.4(react@18.3.1):
+  simplebar-react@3.2.5(react@18.3.1):
     dependencies:
       react: 18.3.1
-      simplebar-core: 1.2.4
+      simplebar-core: 1.2.5
 
   sirv@2.0.4:
     dependencies:
