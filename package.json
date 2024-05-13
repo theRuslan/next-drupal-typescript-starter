@@ -73,7 +73,7 @@
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "babel-loader": "^9.1.3",
-    "cli-real-favicon": "^0.0.8",
+    "cli-real-favicon": "^0.0.9",
     "cross-env": "^7.0.3",
     "eslint": "^9.0.0",
     "eslint-config-next": "^14.1.0",
