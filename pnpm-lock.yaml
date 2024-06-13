@@ -103,7 +103,7 @@ importers:
         version: 0.33.4
       simplebar-react:
         specifier: ^3.2.4
-        version: 3.2.5(react@18.3.1)
+        version: 3.2.6(react@18.3.1)
       use-debounce:
         specifier: ^10.0.0
         version: 10.0.1(react@18.3.1)
@@ -1936,8 +1936,8 @@ packages:
   '@types/lodash@4.14.202':
     resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
 
-  '@types/lodash@4.17.1':
-    resolution: {integrity: sha512-X+2qazGS3jxLAIz5JDXDzglAF3KpijdhFxlf/V1+hEsOUc+HnWi81L/uv/EvGuV90WY+7mPGFCUDGfQC3Gj95Q==}
+  '@types/lodash@4.17.5':
+    resolution: {integrity: sha512-MBIOHVZqVqgfro1euRDWX7OO0fBVUUMrN6Pwm8LQsz8cWhEpihlvR70ENj3f40j58TNxZaWv2ndSkInykNBBJw==}
 
   '@types/minimatch@5.1.2':
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
@@ -2391,9 +2391,6 @@ packages:
   callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
-
-  can-use-dom@0.1.0:
-    resolution: {integrity: sha512-ceOhN1DL7Y4O6M0j9ICgmTYziV89WMd96SvSl0REd8PMgrY0B/WBOPoed5S1KUmJqXgUXh8gzSe6E3ae27upsQ==}
 
   caniuse-lite@1.0.30001632:
     resolution: {integrity: sha512-udx3o7yHJfUxMLkGohMlVHCvFvWmirKh9JAH/d7WOLPetlH+LTL5cocMZ0t7oZx/mdlOWXti97xLZWc8uURRHg==}
@@ -4380,11 +4377,11 @@ packages:
   simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
 
-  simplebar-core@1.2.5:
-    resolution: {integrity: sha512-33AVCYXS8yavWId0GbE4TG1cYELsYybpCKWHJYuWEY/j6nccgz6zQdJ7nCqOpIGo7HgPPbkSSSIlJhi43fHP6A==}
+  simplebar-core@1.2.6:
+    resolution: {integrity: sha512-H5NYU+O+uvqOH5VXw3+lgoc1vTI6jL8LOZJsw4xgRpV7uIPjRpmLPdz0TrouxwKHBhpVLzVIlyKhaRLelIThMw==}
 
-  simplebar-react@3.2.5:
-    resolution: {integrity: sha512-ZstHCBF1Is2Lj+Un8NUYSHVCmn8ufi25ylP9UH2bDnASa+V+M+6/thGhUZOZ7YNpFFHTNgVIID3FHdwRqNuqZA==}
+  simplebar-react@3.2.6:
+    resolution: {integrity: sha512-8jDiBuVCG86JmOrsmkA+4q77iFAEbhU9EX62PohLisg3dnxdLXFFhkxnx2Es3Cxt8IlZFlJsF9GaobFL3ukwiA==}
     peerDependencies:
       react: '>=16.8.0'
 
@@ -6919,7 +6916,7 @@ snapshots:
 
   '@types/lodash-es@4.17.12':
     dependencies:
-      '@types/lodash': 4.17.1
+      '@types/lodash': 4.17.5
 
   '@types/lodash.mergewith@4.6.7':
     dependencies:
@@ -6927,7 +6924,7 @@ snapshots:
 
   '@types/lodash@4.14.202': {}
 
-  '@types/lodash@4.17.1': {}
+  '@types/lodash@4.17.5': {}
 
   '@types/minimatch@5.1.2': {}
 
@@ -7480,8 +7477,6 @@ snapshots:
       set-function-length: 1.2.2
 
   callsites@3.1.0: {}
-
-  can-use-dom@0.1.0: {}
 
   caniuse-lite@1.0.30001632: {}
 
@@ -9792,17 +9787,16 @@ snapshots:
     dependencies:
       is-arrayish: 0.3.2
 
-  simplebar-core@1.2.5:
+  simplebar-core@1.2.6:
     dependencies:
       '@types/lodash-es': 4.17.12
-      can-use-dom: 0.1.0
       lodash: 4.17.21
       lodash-es: 4.17.21
 
-  simplebar-react@3.2.5(react@18.3.1):
+  simplebar-react@3.2.6(react@18.3.1):
     dependencies:
       react: 18.3.1
-      simplebar-core: 1.2.5
+      simplebar-core: 1.2.6
 
   sirv@2.0.4:
     dependencies:
