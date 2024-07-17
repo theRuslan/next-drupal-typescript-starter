@@ -37,7 +37,7 @@ importers:
         version: 4.1.7
       html-react-parser:
         specifier: ^5.1.10
-        version: 5.1.10(@types/react@18.3.3)(react@18.3.1)
+        version: 5.1.11(@types/react@18.3.3)(react@18.3.1)
       html-to-text:
         specifier: ^9.0.5
         version: 9.0.5
@@ -3175,10 +3175,10 @@ packages:
   html-parse-stringify@3.0.1:
     resolution: {integrity: sha512-KknJ50kTInJ7qIScF3jeaFRpMpE8/lfiTdzf/twXyPBLAGrLRTmkz3AdTnKeh40X8k9L2fdYwEp/42WGXIRGcg==}
 
-  html-react-parser@5.1.10:
-    resolution: {integrity: sha512-gV22PvLij4wdEdtrZbGVC7Zy2OVWnQ0bYhX63S196ZRSx4+K0TuutCreHSXr+saUia8KeKB+2TYziVfijpH4Tw==}
+  html-react-parser@5.1.11:
+    resolution: {integrity: sha512-b4IQNUH5s4owJsPUAAZn8blSIXmTzuSvPITpkX7BDRlVWQghQxNQbOXydeDeNnD7wmEp4TgSxJsfjBlrWAjt+Q==}
     peerDependencies:
-      '@types/react': 17 || 18
+      '@types/react': 0.14 || 15 || 16 || 17 || 18
       react: 0.14 || 15 || 16 || 17 || 18
     peerDependenciesMeta:
       '@types/react':
@@ -8528,7 +8528,7 @@ snapshots:
     dependencies:
       void-elements: 3.1.0
 
-  html-react-parser@5.1.10(@types/react@18.3.3)(react@18.3.1):
+  html-react-parser@5.1.11(@types/react@18.3.3)(react@18.3.1):
     dependencies:
       domhandler: 5.0.3
       html-dom-parser: 5.0.8
