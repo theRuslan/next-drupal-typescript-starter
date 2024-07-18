@@ -37,7 +37,7 @@ importers:
         version: 4.1.7
       html-react-parser:
         specifier: ^5.1.10
-        version: 5.1.11(@types/react@18.3.3)(react@18.3.1)
+        version: 5.1.12(@types/react@18.3.3)(react@18.3.1)
       html-to-text:
         specifier: ^9.0.5
         version: 9.0.5
@@ -3166,8 +3166,8 @@ packages:
   hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
 
-  html-dom-parser@5.0.8:
-    resolution: {integrity: sha512-vuWiX9EXgu8CJ5m9EP5c7bvBmNSuQVnrY8tl0z0ZX96Uth1IPlYH/8W8VZ/hBajFf18EN+j2pukbCNd01HEd1w==}
+  html-dom-parser@5.0.9:
+    resolution: {integrity: sha512-QGeoFYwgQ582EDvrBx0+ejIz76/LuQcwwkmSR4ueKncjl2yWbciA45Kfz/LrHvWR3CgtKnxKFkr4Mpq2Sh1QNg==}
 
   html-escaper@2.0.2:
     resolution: {integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==}
@@ -3175,8 +3175,8 @@ packages:
   html-parse-stringify@3.0.1:
     resolution: {integrity: sha512-KknJ50kTInJ7qIScF3jeaFRpMpE8/lfiTdzf/twXyPBLAGrLRTmkz3AdTnKeh40X8k9L2fdYwEp/42WGXIRGcg==}
 
-  html-react-parser@5.1.11:
-    resolution: {integrity: sha512-b4IQNUH5s4owJsPUAAZn8blSIXmTzuSvPITpkX7BDRlVWQghQxNQbOXydeDeNnD7wmEp4TgSxJsfjBlrWAjt+Q==}
+  html-react-parser@5.1.12:
+    resolution: {integrity: sha512-OPv8fsIvxxv/+pLj9mYvyNu8PE5dPMowTRdd5VHpcoZpXlstp8eYCxQ5rzqAE5Tb75rhdiWUXnPltfb62zCVjg==}
     peerDependencies:
       '@types/react': 0.14 || 15 || 16 || 17 || 18
       react: 0.14 || 15 || 16 || 17 || 18
@@ -8517,7 +8517,7 @@ snapshots:
     dependencies:
       react-is: 16.13.1
 
-  html-dom-parser@5.0.8:
+  html-dom-parser@5.0.9:
     dependencies:
       domhandler: 5.0.3
       htmlparser2: 9.1.0
@@ -8528,10 +8528,10 @@ snapshots:
     dependencies:
       void-elements: 3.1.0
 
-  html-react-parser@5.1.11(@types/react@18.3.3)(react@18.3.1):
+  html-react-parser@5.1.12(@types/react@18.3.3)(react@18.3.1):
     dependencies:
       domhandler: 5.0.3
-      html-dom-parser: 5.0.8
+      html-dom-parser: 5.0.9
       react: 18.3.1
       react-property: 2.0.2
       style-to-js: 1.1.12
