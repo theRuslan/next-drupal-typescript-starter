@@ -88,7 +88,7 @@ importers:
         version: 2.1.1
       react-photoswipe-gallery:
         specifier: ^3.0.1
-        version: 3.0.1(photoswipe@5.4.4)(prop-types@15.8.1)(react@18.3.1)
+        version: 3.0.2(photoswipe@5.4.4)(prop-types@15.8.1)(react@18.3.1)
       react-redux:
         specifier: ^9.1.2
         version: 9.1.2(@types/react@18.3.3)(react@18.3.1)(redux@5.0.1)
@@ -4060,8 +4060,8 @@ packages:
   react-merge-refs@2.1.1:
     resolution: {integrity: sha512-jLQXJ/URln51zskhgppGJ2ub7b2WFKGq3cl3NYKtlHoTG+dN2q7EzWrn3hN3EgPsTMvpR9tpq5ijdp7YwFZkag==}
 
-  react-photoswipe-gallery@3.0.1:
-    resolution: {integrity: sha512-5RS/72iPNMieDneAxhTB9uT39Gp9E1JAgv83FUZJzFOnZRcJezneiRuXcU+0Wi7VJ7hRU7A+R5ocZpMVacUrYA==}
+  react-photoswipe-gallery@3.0.2:
+    resolution: {integrity: sha512-TLkpzp2BSUUL/4GPRU5SQWXfJ8xuUBKgS8qUaHyhsT1co6CStr1mVCl4oQrSSFbWxAKhB5fHbr12l1R+TkqFcQ==}
     peerDependencies:
       photoswipe: '>= 5.2.2'
       prop-types: '>= 15.7.0'
@@ -9390,7 +9390,7 @@ snapshots:
 
   react-merge-refs@2.1.1: {}
 
-  react-photoswipe-gallery@3.0.1(photoswipe@5.4.4)(prop-types@15.8.1)(react@18.3.1):
+  react-photoswipe-gallery@3.0.2(photoswipe@5.4.4)(prop-types@15.8.1)(react@18.3.1):
     dependencies:
       photoswipe: 5.4.4
       prop-types: 15.8.1
