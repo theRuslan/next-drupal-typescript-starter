@@ -119,7 +119,7 @@ importers:
         version: 9.0.4
       '@types/node':
         specifier: ^20.14.9
-        version: 20.16.6
+        version: 20.16.7
       '@types/nprogress':
         specifier: ^0.2.3
         version: 0.2.3
@@ -1960,8 +1960,8 @@ packages:
   '@types/minimatch@5.1.2':
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
 
-  '@types/node@20.16.6':
-    resolution: {integrity: sha512-T7PpxM/6yeDE+AdlVysT62BX6/bECZOmQAgiFg5NoBd5MQheZ3tzal7f1wvzfiEcmrcJNRi2zRr2nY2zF+0uqw==}
+  '@types/node@20.16.7':
+    resolution: {integrity: sha512-QkDQjAY3gkvJNcZOWwzy3BN34RweT0OQ9zJyvLCU0kSK22dO2QYh/NHGfbEAYylPYzRB1/iXcojS79wOg5gFSw==}
 
   '@types/nprogress@0.2.3':
     resolution: {integrity: sha512-k7kRA033QNtC+gLc4VPlfnue58CM1iQLgn1IMAU8VPHGOj7oIHPp9UlhedEnD/Gl8evoCjwkZjlBORtZ3JByUA==}
@@ -7014,7 +7014,7 @@ snapshots:
   '@types/glob@7.2.0':
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 20.16.6
+      '@types/node': 20.16.7
 
   '@types/hoist-non-react-statics@3.3.5':
     dependencies:
@@ -7039,7 +7039,7 @@ snapshots:
 
   '@types/minimatch@5.1.2': {}
 
-  '@types/node@20.16.6':
+  '@types/node@20.16.7':
     dependencies:
       undici-types: 6.19.8
 
@@ -7062,7 +7062,7 @@ snapshots:
 
   '@types/resolve@1.17.1':
     dependencies:
-      '@types/node': 20.16.6
+      '@types/node': 20.16.7
 
   '@types/safe-json-stringify@1.1.5': {}
 
@@ -8827,13 +8827,13 @@ snapshots:
 
   jest-worker@26.6.2:
     dependencies:
-      '@types/node': 20.16.6
+      '@types/node': 20.16.7
       merge-stream: 2.0.0
       supports-color: 7.2.0
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 20.16.6
+      '@types/node': 20.16.7
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
