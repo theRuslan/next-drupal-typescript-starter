@@ -131,7 +131,7 @@ importers:
         version: 18.3.1
       '@types/react-gtm-module':
         specifier: ^2.0.3
-        version: 2.0.3
+        version: 2.0.4
       '@types/safe-json-stringify':
         specifier: ^1.1.5
         version: 1.1.5
@@ -1573,8 +1573,8 @@ packages:
   '@types/react-dom@18.3.1':
     resolution: {integrity: sha512-qW1Mfv8taImTthu4KoXgDfLuk4bydU6Q/TkADnDWWHwi4NX4BR+LWfTp2sVmTqRrsHvyDDTelgelxJ+SsejKKQ==}
 
-  '@types/react-gtm-module@2.0.3':
-    resolution: {integrity: sha512-fL2zKdDFN5LckSsVBXEhhm9M4tFTM9oHJfGcfZJzktQkzpOTGtDM8oXIP9d9UBDxO4xLNZhS22dlgRVv6wgK9w==}
+  '@types/react-gtm-module@2.0.4':
+    resolution: {integrity: sha512-5wPMWsUE5AI6O0B0K1/zbs0rFHBKu+7NWXQwDXhqvA12ooLD6W1AYiWZqR4UiOd7ixZDV1H5Ys301zEsqyIfNg==}
 
   '@types/react@18.3.11':
     resolution: {integrity: sha512-r6QZ069rFTjrEYgFdOck1gK7FLVsgJE7tTz0pQBczlBNUhBNk0MQH4UbnFSwjpQLMkLzgqvBBa+qGpLje16eTQ==}
@@ -6319,7 +6319,7 @@ snapshots:
     dependencies:
       '@types/react': 18.3.11
 
-  '@types/react-gtm-module@2.0.3': {}
+  '@types/react-gtm-module@2.0.4': {}
 
   '@types/react@18.3.11':
     dependencies:
