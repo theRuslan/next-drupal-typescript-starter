@@ -28,7 +28,7 @@ importers:
         version: 1.7.7
       drupal-jsonapi-params:
         specifier: ^2.3.1
-        version: 2.3.1
+        version: 2.3.2
       framer-motion:
         specifier: ^11.2.12
         version: 11.11.8(@emotion/is-prop-valid@1.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -2331,8 +2331,8 @@ packages:
     resolution: {integrity: sha512-tE7ztYzXHIeyvc7N+hR3oi7FIbf/NIjVP9hmAt3yMXzrQ072/fpjGLx2GxNxGxUl5V73MEqYzioOMoVhGMJ5cA==}
     engines: {node: '>=10'}
 
-  drupal-jsonapi-params@2.3.1:
-    resolution: {integrity: sha512-Isx6dudrFhORCl87OWHHO2LpQIAha5d6n7+/fwngsgcQs4PYeZcmTAA3pKUmvfyyFgCJ0N4fLAJQHyf4jtgiDA==}
+  drupal-jsonapi-params@2.3.2:
+    resolution: {integrity: sha512-2flOOPT8E8IhxzD4dW8tDToOkzTEzsfbY8k4Nbu11JshRdaJl1jL2lmbB7QLZuMnG77HhjXjEgF8Rw7j/5yB5g==}
 
   duplexer@0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
@@ -3847,6 +3847,10 @@ packages:
 
   qs@6.12.2:
     resolution: {integrity: sha512-x+NLUpx9SYrcwXtX7ob1gnkSems4i/mGZX5SlYxwIau6RrUSODO89TR/XDGGpn5RPWSYIB+aSfuSlV5+CmbTBg==}
+    engines: {node: '>=0.6'}
+
+  qs@6.13.0:
+    resolution: {integrity: sha512-+38qI9SOr8tfZ4QmJNplMUxqjbe7LKvvZgWdExBOmd+egZTtjLB67Gu0HRX3u/XOq7UU2Nx6nsjvS16Z9uwfpg==}
     engines: {node: '>=0.6'}
 
   queue-microtask@1.2.3:
@@ -7183,9 +7187,9 @@ snapshots:
     dependencies:
       is-obj: 2.0.0
 
-  drupal-jsonapi-params@2.3.1:
+  drupal-jsonapi-params@2.3.2:
     dependencies:
-      qs: 6.12.2
+      qs: 6.13.0
 
   duplexer@0.1.2: {}
 
@@ -8841,6 +8845,10 @@ snapshots:
       escape-goat: 4.0.0
 
   qs@6.12.2:
+    dependencies:
+      side-channel: 1.0.6
+
+  qs@6.13.0:
     dependencies:
       side-channel: 1.0.6
 
