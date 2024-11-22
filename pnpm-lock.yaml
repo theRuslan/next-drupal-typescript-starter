@@ -146,7 +146,7 @@ importers:
         version: 7.18.0(eslint@8.57.1)(typescript@5.6.3)
       babel-loader:
         specifier: ^9.1.3
-        version: 9.2.0(@babel/core@7.24.7)(webpack@5.92.1)
+        version: 9.2.1(@babel/core@7.24.7)(webpack@5.92.1)
       cli-real-favicon:
         specifier: ^0.0.9
         version: 0.0.9
@@ -1885,15 +1885,15 @@ packages:
     resolution: {integrity: sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ==}
     engines: {node: '>= 0.4'}
 
-  babel-loader@8.4.0:
-    resolution: {integrity: sha512-6J0F0cgwhd9pq6TAaeM0cfR2F1rHpV4Zc1v/nSyNtoE+iD1jexulNBsmXOozLVeuKUWTkI0uoJdc0E+bMK+qwQ==}
+  babel-loader@8.4.1:
+    resolution: {integrity: sha512-nXzRChX+Z1GoE6yWavBQg6jDslyFF3SDjl2paADuoQtQW10JqShJt62R6eJQ5m/pjJFDT8xgKIWSP85OY8eXeA==}
     engines: {node: '>= 8.9'}
     peerDependencies:
       '@babel/core': ^7.0.0
       webpack: '>=2'
 
-  babel-loader@9.2.0:
-    resolution: {integrity: sha512-s4qfbvr85H17Rk7ozQJBIIMcVVjX8eu6NjJHzkPRswOzZcE5h+XSKAgT4KElsdkvywaWezwlu0BptTQivZ6eMQ==}
+  babel-loader@9.2.1:
+    resolution: {integrity: sha512-fqe8naHt46e0yIdkjUZYqddSXfej3AHajX+CSO5X7oy0EmPc6o5Xh+RClNoHjnieWz9AW4kZxW9yyFMhVB1QLA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       '@babel/core': ^7.12.0
@@ -6675,7 +6675,7 @@ snapshots:
 
   axobject-query@4.1.0: {}
 
-  babel-loader@8.4.0(@babel/core@7.24.7)(webpack@5.92.1):
+  babel-loader@8.4.1(@babel/core@7.24.7)(webpack@5.92.1):
     dependencies:
       '@babel/core': 7.24.7
       find-cache-dir: 3.3.2
@@ -6684,7 +6684,7 @@ snapshots:
       schema-utils: 2.7.1
       webpack: 5.92.1
 
-  babel-loader@9.2.0(@babel/core@7.24.7)(webpack@5.92.1):
+  babel-loader@9.2.1(@babel/core@7.24.7)(webpack@5.92.1):
     dependencies:
       '@babel/core': 7.24.7
       find-cache-dir: 4.0.0
@@ -8422,7 +8422,7 @@ snapshots:
 
   next-pwa@5.6.0(@babel/core@7.24.7)(next@14.2.16(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(webpack@5.92.1):
     dependencies:
-      babel-loader: 8.4.0(@babel/core@7.24.7)(webpack@5.92.1)
+      babel-loader: 8.4.1(@babel/core@7.24.7)(webpack@5.92.1)
       clean-webpack-plugin: 4.0.0(webpack@5.92.1)
       globby: 11.1.0
       next: 14.2.16(@babel/core@7.24.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
